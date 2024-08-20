@@ -27,6 +27,13 @@ export default defineConfig({
       external: [...Object.keys(globals)],
       input: {
         index: resolve("./src/index.ts"),
+        array: resolve("./src/array/index.ts"),
+        core: resolve("./src/core/index.ts"),
+        date: resolve("./src/date/index.ts"),
+        math: resolve("./src/math/index.ts"),
+        regex: resolve("./src/regex/index.ts"),
+        string: resolve("./src/string/index.ts"),
+        system: resolve("./src/system/index.ts"),
       },
     },
   },

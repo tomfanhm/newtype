@@ -1,0 +1,8 @@
+export { default as bubbleSort } from "./bubble-sort/bubble-sort"
+export { default as selectionSort } from "./selection-sort/selection-sort"
+export { default as insertionSort } from "./insertion-sort/insertion-sort"
+export { default as mergeSort } from "./merge-sort/merge-sort"
+export { default as quickSort } from "./quick-sort/quick-sort"
+export { default as heapSort } from "./heap-sort/heap-sort"
+export { default as timSort } from "./tim-sort/tim-sort"
+export { default as chunks } from "./chunks/chunks"

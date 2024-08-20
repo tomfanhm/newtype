@@ -26,6 +26,34 @@
     ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.js"
+    },
+    "./array": {
+      "import": "./dist/array.js",
+      "require": "./dist/array.js"
+    },
+    "./core": {
+      "import": "./dist/core.js",
+      "require": "./dist/core.js"
+    },
+    "./date": {
+      "import": "./dist/date.js",
+      "require": "./dist/date.js"
+    },
+    "./math": {
+      "import": "./dist/math.js",
+      "require": "./dist/math.js"
+    },
+    "./regex": {
+      "import": "./dist/regex.js",
+      "require": "./dist/regex.js"
+    },
+    "./string": {
+      "import": "./dist/string.js",
+      "require": "./dist/string.js"
+    },
+    "./system": {
+      "import": "./dist/system.js",
+      "require": "./dist/system.js"
     }
   },
   "types": "./dist/index.d.ts",
