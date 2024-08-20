@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest"
-import chunks from "./chunks"
+import chunks from "./chunk"
 
-describe("chunks", () => {
+describe("chunk function", () => {
   it("should split an array into chunks of the given size", () => {
     const array = [1, 2, 3, 4, 5, 6]
     const chunkSize = 2

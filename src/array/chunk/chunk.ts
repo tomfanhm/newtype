@@ -7,7 +7,7 @@
  * @returns An array of chunks, where each chunk is an array of elements from the original array.
  * @throws If the chunk size is less than or equal to zero.
  */
-export default function chunks<T>(array: T[], chunkSize: number): T[][] {
+export default function chunk<T>(array: T[], chunkSize: number): T[][] {
   if (chunkSize <= 0) {
     throw new Error("Chunk size must be greater than zero.")
   }

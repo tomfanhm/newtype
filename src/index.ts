@@ -15,7 +15,7 @@ export default {
   quickSort: arrayMap.quickSort,
   heapSort: arrayMap.heapSort,
   timSort: arrayMap.timSort,
-  chunks: arrayMap.chunks,
+  chunk: arrayMap.chunk,
   // Core
   lerp: coreMap.lerp,
   checkRectangleCollision: coreMap.checkRectangleCollision,
