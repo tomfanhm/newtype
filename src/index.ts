@@ -3,7 +3,7 @@ import * as coreMap from "./core"
 // import * as dateMap from "./date"
 import * as mathMap from "./math"
 // import * as regexMap from "./regex"
-// import * as stringMap from "./string"
+import * as stringMap from "./string"
 import * as systemMap from "./system"
 
 export default {
@@ -16,6 +16,7 @@ export default {
   heapSort: arrayMap.heapSort,
   timSort: arrayMap.timSort,
   chunk: arrayMap.chunk,
+  compact: arrayMap.compact,
   // Core
   lerp: coreMap.lerp,
   checkRectangleCollision: coreMap.checkRectangleCollision,
@@ -27,6 +28,9 @@ export default {
   mean: mathMap.mean,
   // Regex
   // String
+  isUUID: stringMap.isUUID,
+  numberToRoman: stringMap.numberToRoman,
+  capitalize: stringMap.capitalize,
   // System
   measurePerformance: systemMap.measurePerformance,
 }
