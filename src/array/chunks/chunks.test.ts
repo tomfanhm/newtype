@@ -62,4 +62,11 @@ describe("chunks", () => {
       [{ three: 3 }, [4]],
     ])
   })
+
+  it("should not modify the original array", () => {
+    const arr = [1, 2, 3, 4, 5, 6]
+    const arrCopy = [...arr]
+    chunks(arr, 2)
+    expect(arr).toEqual(arrCopy)
+  })
 })
