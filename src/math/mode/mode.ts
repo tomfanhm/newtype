@@ -8,9 +8,7 @@
  * @returns An array of mode(s) or undefined if the input array is empty.
  */
 export default function mode(numbers: number[]): number[] | undefined {
-  if (numbers.length === 0) {
-    return undefined
-  }
+  if (numbers.length === 0) return undefined
 
   const frequency: Record<number, number> = {}
   let maxFreq = 0

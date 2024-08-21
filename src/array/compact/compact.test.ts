@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest"
 import compact from "./compact"
 
-describe("compact", () => {
+describe("compact function", () => {
   it("should remove null and undefined values from the array", () => {
     const input = [1, null, undefined, 2, 3, undefined, 4]
     const expected = [1, 2, 3, 4]
@@ -50,7 +50,7 @@ describe("compact", () => {
     expect(compact(input)).toEqual(expected)
   })
 
-  it("should remove nested null or undefined values within arrays", () => {
+  it("should not remove nested null or undefined values within arrays", () => {
     const input = [[1, null], [undefined, 2], 3]
     const expected = [[1, null], [undefined, 2], 3]
     expect(compact(input)).toEqual(expected)

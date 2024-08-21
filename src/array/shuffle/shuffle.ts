@@ -7,14 +7,15 @@
  * @template T - The type of elements in the array.
  */
 export default function shuffle<T>(array: T[]): T[] {
-  let currentIndex = array.length
+  const clone = array.slice()
+  let currentIndex = clone.length
   let randomIndex
 
   while (currentIndex != 0) {
     randomIndex = Math.floor(Math.random() * currentIndex)
     currentIndex--
-    ;[array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]]
+    ;[clone[currentIndex], clone[randomIndex]] = [clone[randomIndex], clone[currentIndex]]
   }
 
-  return array
+  return clone
 }
