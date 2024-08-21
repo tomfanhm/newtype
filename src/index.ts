@@ -37,6 +37,7 @@ export default {
   q2: mathMap.q2,
   q3: mathMap.q3,
   q4: mathMap.q4,
+  rotateMatrix: mathMap.rotateMatrix,
   std: mathMap.std,
   sum: mathMap.sum,
   variance: mathMap.variance,
