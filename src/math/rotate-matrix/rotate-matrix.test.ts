@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest"
 import rotateMatrix from "./rotate-matrix"
 
-describe("rotateMatrix", () => {
+describe("rotateMatrix function", () => {
   const matrix3x3 = [
     [1, 2, 3],
     [4, 5, 6],
