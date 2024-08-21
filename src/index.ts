@@ -20,6 +20,7 @@ export default {
   timSort: arrayMap.timSort,
   // Core
   checkRectangleCollision: coreMap.checkRectangleCollision,
+  createCounter: coreMap.createCounter,
   lerp: coreMap.lerp,
   scheduler: coreMap.scheduler,
   sleep: coreMap.sleep,

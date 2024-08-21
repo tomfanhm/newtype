@@ -1,4 +1,5 @@
 export { default as checkRectangleCollision } from "./check-rectangle-collision/check-rectangle-collision"
+export { default as createCounter } from "./create-counter/create-counter"
 export { default as lerp } from "./lerp/lerp"
 export { default as scheduler } from "./scheduler/scheduler"
 export { default as sleep } from "./sleep/sleep"
