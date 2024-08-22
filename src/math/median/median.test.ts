@@ -2,8 +2,8 @@ import { describe, it, expect } from "vitest"
 import median from "./median"
 
 describe("median function", () => {
-  it("should return undefined for an empty array", () => {
-    expect(median([])).toBeUndefined()
+  it("should throw an error when the array is empty", () => {
+    expect(() => median([])).toThrow("The array is empty.")
   })
 
   it("should return the only element for a single-element array", () => {

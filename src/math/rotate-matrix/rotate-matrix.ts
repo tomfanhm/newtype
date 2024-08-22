@@ -14,6 +14,7 @@ export default function rotateMatrix(
   if (![90, 180, 270, 360].includes(degrees)) {
     throw new Error("Invalid rotation degree. Must be one of 90, 180, 270, 360.")
   }
+  if (matrix.length === 0) return matrix
   if (!clockwise) degrees = 360 - degrees
   let rotated = matrix.map((row) => [...row]) // Deep clone the matrix
   const numRotations = (degrees / 90) % 4

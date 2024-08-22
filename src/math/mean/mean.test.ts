@@ -26,8 +26,8 @@ describe("mean function", () => {
     expect(mean([-10])).toBe(-10)
   })
 
-  it("should return undefined when the array is empty", () => {
-    expect(mean([])).toBeUndefined()
+  it("should throw an error when the array is empty", () => {
+    expect(() => mean([])).toThrow("The array is empty.")
   })
 
   it("should return the number itself when the array contains a single large number", () => {

@@ -40,11 +40,11 @@ describe("variance function", () => {
     expect(variance([0, 0, 0, 0], false)).toBe(0)
   })
 
-  it("should return undefined when the array contains only one number", () => {
-    expect(variance([10])).toBeUndefined()
+  it("should throw an error when the array is empty", () => {
+    expect(() => variance([])).toThrow("The array is empty.")
   })
 
-  it("should return undefined when the array is empty", () => {
-    expect(variance([])).toBeUndefined()
+  it("should throw an error when the array contains only one number and isSample is true", () => {
+    expect(() => variance([10])).toThrow("The array must contain more than one element for sample variance.")
   })
 })

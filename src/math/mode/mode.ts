@@ -2,13 +2,12 @@
  * Calculates the mode(s) of an array of numbers.
  * The mode is the value(s) that appear most frequently in the array.
  * If there are multiple modes, all of them will be returned.
- * If the input array is empty, undefined will be returned.
- *
  * @param numbers - An array of numbers.
- * @returns An array of mode(s) or undefined if the input array is empty.
+ * @returns An array of mode(s) from the input array.
+ * @throws If the input array is empty.
  */
-export default function mode(numbers: number[]): number[] | undefined {
-  if (numbers.length === 0) return undefined
+export default function mode(numbers: number[]): number[] {
+  if (numbers.length === 0) throw new Error("The array is empty.")
 
   const frequency: Record<number, number> = {}
   let maxFreq = 0

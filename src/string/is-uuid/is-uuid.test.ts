@@ -12,6 +12,8 @@ describe("isUUID function", () => {
     expect(isUUID(v4)).toBe(true)
     const v5 = uuidv5("hello", uuidv5.DNS)
     expect(isUUID(v5)).toBe(true)
+    const uuid = "a9c19d9b-c88e-453c-8a3e-7c0cc816c37d"
+    expect(isUUID(uuid)).toBe(true)
   })
 
   it("should return false for strings that are not valid UUIDs", () => {

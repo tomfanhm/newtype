@@ -2,8 +2,8 @@ import { describe, it, expect } from "vitest"
 import mode from "./mode"
 
 describe("mode function", () => {
-  it("should return undefined for an empty array", () => {
-    expect(mode([])).toBeUndefined()
+  it("should throw an error when the array is empty", () => {
+    expect(() => mode([])).toThrow("The array is empty.")
   })
 
   it("should return the single element for an array with one element", () => {

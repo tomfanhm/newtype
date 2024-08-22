@@ -2,12 +2,12 @@ import { describe, it, expect } from "vitest"
 import std from "./std"
 
 describe("std function", () => {
-  it("should return undefined for an empty array", () => {
-    expect(std([])).toBeUndefined()
+  it("should throw an error when the array is empty", () => {
+    expect(() => std([])).toThrow("The array is empty.")
   })
 
-  it("should return undefined for an array with one element if isSample is true", () => {
-    expect(std([5], true)).toBeUndefined()
+  it("should throw an error when the array contains only one number and isSample is true", () => {
+    expect(() => std([5], true)).toThrow("The array must contain more than one element for sample standard deviation.")
   })
 
   it("should return 0 for an array with one element if isSample is false", () => {

@@ -118,4 +118,8 @@ describe("rotateMatrix function", () => {
     ])
     expect(result360).toEqual(matrix)
   })
+
+  it("should handle empty matrix", () => {
+    expect(rotateMatrix([], 90)).toEqual([])
+  })
 })
