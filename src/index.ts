@@ -36,6 +36,7 @@ export default {
   isSymbol: coreMap.isSymbol,
   isUndefined: coreMap.isUndefined,
   lerp: coreMap.lerp,
+  parseUrl: coreMap.parseUrl,
   scheduler: coreMap.scheduler,
   sleep: coreMap.sleep,
   // Date

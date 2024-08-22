@@ -17,5 +17,6 @@ export {
   isUndefined,
 } from "./type-guard/type-guard"
 export { default as lerp } from "./lerp/lerp"
+export { default as parseUrl } from "./parse-url/parse-url"
 export { default as scheduler } from "./scheduler/scheduler"
 export { default as sleep } from "./sleep/sleep"
