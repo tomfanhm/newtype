@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from "vitest"
 import createCounter from "./create-counter"
 
-describe("createCounter", () => {
+describe("createCounter function", () => {
   let counter: ReturnType<typeof createCounter>
 
   beforeEach(() => {

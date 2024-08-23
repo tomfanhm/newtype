@@ -1,6 +1,6 @@
 import * as arrayMap from "./array"
 import * as coreMap from "./core"
-// import * as dateMap from "./date"
+import * as dateMap from "./date"
 import * as mathMap from "./math"
 // import * as regexMap from "./regex"
 import * as stringMap from "./string"
@@ -19,6 +19,7 @@ export default {
   shuffle: arrayMap.shuffle,
   timSort: arrayMap.timSort,
   // Core
+  buildUrl: coreMap.buildUrl,
   checkRectangleCollision: coreMap.checkRectangleCollision,
   createCounter: coreMap.createCounter,
   isArray: coreMap.isArray,
@@ -40,6 +41,8 @@ export default {
   scheduler: coreMap.scheduler,
   sleep: coreMap.sleep,
   // Date
+  dateCalculator: dateMap.dateCalculator,
+  isLeapYear: dateMap.isLeapYear,
   // Math
   binomial: mathMap.binomial,
   factorial: mathMap.factorial,

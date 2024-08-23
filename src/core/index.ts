@@ -1,3 +1,4 @@
+export { default as buildUrl } from "./build-url/build-url"
 export { default as checkRectangleCollision } from "./check-rectangle-collision/check-rectangle-collision"
 export { default as createCounter } from "./create-counter/create-counter"
 export {
