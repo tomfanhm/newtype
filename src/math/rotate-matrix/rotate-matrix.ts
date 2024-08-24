@@ -29,7 +29,7 @@ export default function rotateMatrix(
 function rotate(matrix: number[][]): number[][] {
   const m = matrix.length
   const n = matrix[0].length
-  let rotated = Array.from({ length: n }, () => new Array(m).fill(0))
+  const rotated = Array.from({ length: n }, () => new Array(m).fill(0))
 
   for (let i = 0; i < m; i++) {
     for (let j = 0; j < n; j++) {

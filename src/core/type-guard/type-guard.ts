@@ -92,6 +92,7 @@ export function isArray<T>(value: unknown): value is Array<T> {
  * @param value - The value to check.
  * @returns `true` if the value is a function, `false` otherwise.
  */
+// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
 export function isFunction(value: unknown): value is Function {
   return typeof value === "function"
 }

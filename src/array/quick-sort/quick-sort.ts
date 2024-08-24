@@ -11,14 +11,14 @@ export default function quickSort<T>(arr: T[], compare: (a: T, b: T) => number):
 
   function quickSortRecursive(clone: T[], low: number, high: number): void {
     if (low < high) {
-      let pi = partition(clone, low, high)
+      const pi = partition(clone, low, high)
       quickSortRecursive(clone, low, pi - 1)
       quickSortRecursive(clone, pi + 1, high)
     }
   }
 
   function partition(clone: T[], low: number, high: number): number {
-    let pivot: T = clone[high]
+    const pivot: T = clone[high]
     let i = low - 1
 
     for (let j = low; j <= high - 1; j++) {
@@ -32,7 +32,7 @@ export default function quickSort<T>(arr: T[], compare: (a: T, b: T) => number):
   }
 
   function swap(clone: T[], i: number, j: number): void {
-    let temp = clone[i]
+    const temp = clone[i]
     clone[i] = clone[j]
     clone[j] = temp
   }

@@ -2,7 +2,7 @@ const MIN_RUN = 32
 
 function insertionSort<T>(arr: T[], left: number, right: number, compare: (a: T, b: T) => number): void {
   for (let i = left + 1; i <= right; i++) {
-    let temp = arr[i]
+    const temp = arr[i]
     let j = i - 1
     while (j >= left && compare(arr[j], temp) > 0) {
       arr[j + 1] = arr[j]
@@ -13,10 +13,10 @@ function insertionSort<T>(arr: T[], left: number, right: number, compare: (a: T,
 }
 
 function merge<T>(arr: T[], left: number, mid: number, right: number, compare: (a: T, b: T) => number): void {
-  let len1 = mid - left + 1
-  let len2 = right - mid
-  let leftArr = new Array<T>(len1)
-  let rightArr = new Array<T>(len2)
+  const len1 = mid - left + 1
+  const len2 = right - mid
+  const leftArr = new Array<T>(len1)
+  const rightArr = new Array<T>(len2)
 
   for (let i = 0; i < len1; i++) {
     leftArr[i] = arr[left + i]
@@ -64,8 +64,8 @@ export default function timSort<T>(arr: T[], compare: (a: T, b: T) => number): T
 
   for (let size = MIN_RUN; size < n; size = 2 * size) {
     for (let left = 0; left < n; left += 2 * size) {
-      let mid = Math.min(left + size - 1, n - 1)
-      let right = Math.min(left + 2 * size - 1, n - 1)
+      const mid = Math.min(left + size - 1, n - 1)
+      const right = Math.min(left + 2 * size - 1, n - 1)
       if (mid < right) {
         merge(clone, left, mid, right, compare)
       }

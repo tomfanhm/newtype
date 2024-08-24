@@ -2,7 +2,6 @@ import * as arrayMap from "./array"
 import * as coreMap from "./core"
 import * as dateMap from "./date"
 import * as mathMap from "./math"
-// import * as regexMap from "./regex"
 import * as stringMap from "./string"
 import * as systemMap from "./system"
 
@@ -13,6 +12,7 @@ export default {
   compact: arrayMap.compact,
   heapSort: arrayMap.heapSort,
   insertionSort: arrayMap.insertionSort,
+  intersection: arrayMap.intersection,
   mergeSort: arrayMap.mergeSort,
   quickSort: arrayMap.quickSort,
   selectionSort: arrayMap.selectionSort,
@@ -41,8 +41,10 @@ export default {
   scheduler: coreMap.scheduler,
   sleep: coreMap.sleep,
   // Date
+  age: dateMap.age,
   dateCalculator: dateMap.dateCalculator,
   isLeapYear: dateMap.isLeapYear,
+  isWeekend: dateMap.isWeekend,
   // Math
   binomial: mathMap.binomial,
   factorial: mathMap.factorial,
@@ -60,11 +62,11 @@ export default {
   std: mathMap.std,
   sum: mathMap.sum,
   variance: mathMap.variance,
-  // Regex
   // String
   capitalize: stringMap.capitalize,
   isUUID: stringMap.isUUID,
   numberToRoman: stringMap.numberToRoman,
+  replaceAll: stringMap.replaceAll,
   // System
   measurePerformance: systemMap.measurePerformance,
 }

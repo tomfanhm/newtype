@@ -14,7 +14,7 @@ export default function bubbleSort<T>(arr: T[], compare: (a: T, b: T) => number)
     swapped = false
     for (let i = 1; i < n; i++) {
       if (compare(clone[i - 1], clone[i]) > 0) {
-        let temp: T = clone[i - 1]
+        const temp: T = clone[i - 1]
         clone[i - 1] = clone[i]
         clone[i] = temp
         swapped = true

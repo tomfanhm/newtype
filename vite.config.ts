@@ -31,7 +31,6 @@ export default defineConfig({
         core: resolve("./src/core/index.ts"),
         date: resolve("./src/date/index.ts"),
         math: resolve("./src/math/index.ts"),
-        regex: resolve("./src/regex/index.ts"),
         string: resolve("./src/string/index.ts"),
         system: resolve("./src/system/index.ts"),
       },

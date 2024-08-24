@@ -2,8 +2,8 @@ export function merge<T>(arr: T[], l: number, m: number, r: number, compare: (a:
   const n1 = m - l + 1
   const n2 = r - m
 
-  let L: T[] = new Array(n1)
-  let R: T[] = new Array(n2)
+  const L: T[] = new Array(n1)
+  const R: T[] = new Array(n2)
 
   for (let i = 0; i < n1; i++) L[i] = arr[l + i]
   for (let j = 0; j < n2; j++) R[j] = arr[m + 1 + j]

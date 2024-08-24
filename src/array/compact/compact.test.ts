@@ -21,8 +21,8 @@ describe("compact function", () => {
   })
 
   it("should return an empty array if the input array is empty", () => {
-    const input: any[] = []
-    const expected: any[] = []
+    const input: [] = []
+    const expected: [] = []
     expect(compact(input)).toEqual(expected)
   })
 
@@ -34,7 +34,7 @@ describe("compact function", () => {
 
   it("should return an empty array if all elements are null or undefined", () => {
     const input = [null, undefined, undefined, null]
-    const expected: any[] = []
+    const expected: [] = []
     expect(compact(input)).toEqual(expected)
   })
 

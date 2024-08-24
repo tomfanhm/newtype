@@ -8,9 +8,9 @@
  */
 export default function insertionSort<T>(arr: T[], compare: (a: T, b: T) => number): T[] {
   const clone = [...arr]
-  let n: number = clone.length
+  const n: number = clone.length
   for (let i = 1; i < n; i++) {
-    let current: T = clone[i]
+    const current: T = clone[i]
     let j: number = i - 1
 
     while (j >= 0 && compare(clone[j], current) > 0) {

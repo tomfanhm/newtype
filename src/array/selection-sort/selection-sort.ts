@@ -8,7 +8,7 @@
  */
 export default function selectionSort<T>(arr: T[], compare: (a: T, b: T) => number): T[] {
   const clone = [...arr]
-  let n: number = clone.length
+  const n: number = clone.length
   for (let i = 0; i < n - 1; i++) {
     let minIndex: number = i
     for (let j = i + 1; j < n; j++) {
@@ -17,7 +17,7 @@ export default function selectionSort<T>(arr: T[], compare: (a: T, b: T) => numb
       }
     }
 
-    let temp: T = clone[minIndex]
+    const temp: T = clone[minIndex]
     clone[minIndex] = clone[i]
     clone[i] = temp
   }

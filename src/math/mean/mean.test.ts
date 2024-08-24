@@ -43,6 +43,7 @@ describe("mean function", () => {
   })
 
   it("should return the correct mean for an array of very small and very large numbers", () => {
+    // eslint-disable-next-line no-loss-of-precision
     expect(mean([0.0000001, 1000000000])).toBeCloseTo(500000000.00000005)
   })
 })

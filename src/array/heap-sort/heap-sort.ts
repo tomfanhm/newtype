@@ -8,7 +8,7 @@
  */
 export default function heapSort<T>(arr: T[], compare: (a: T, b: T) => number): T[] {
   const clone = [...arr]
-  let n = clone.length
+  const n = clone.length
   for (let i = Math.floor(n / 2) - 1; i >= 0; i--) heapify(clone, n, i, compare)
   for (let i = n - 1; i > 0; i--) {
     swap(clone, 0, i)
@@ -20,8 +20,8 @@ export default function heapSort<T>(arr: T[], compare: (a: T, b: T) => number): 
 
 function heapify<T>(arr: T[], n: number, i: number, compare: (a: T, b: T) => number): void {
   let largest = i
-  let l = 2 * i + 1
-  let r = 2 * i + 2
+  const l = 2 * i + 1
+  const r = 2 * i + 2
   if (l < n && compare(arr[l], arr[largest]) > 0) largest = l
   if (r < n && compare(arr[r], arr[largest]) > 0) largest = r
   if (largest != i) {
@@ -31,7 +31,7 @@ function heapify<T>(arr: T[], n: number, i: number, compare: (a: T, b: T) => num
 }
 
 function swap<T>(arr: T[], i: number, j: number): void {
-  let temp = arr[i]
+  const temp = arr[i]
   arr[i] = arr[j]
   arr[j] = temp
 }
