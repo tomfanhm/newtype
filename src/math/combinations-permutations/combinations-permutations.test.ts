@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest"
-import { nCr, nPr } from "./combinations"
+import { nCr, nPr } from "./combinations-permutations"
 
-describe("combinations functions", () => {
+describe("combinations and permutations function", () => {
   describe("nCr function", () => {
     it("should return the correct number of combinations for valid inputs", () => {
       expect(nCr(5, 3)).toBe(10) // 5C3 = 10

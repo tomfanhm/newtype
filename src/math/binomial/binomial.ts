@@ -1,4 +1,4 @@
-import { nCr } from "../combinations/combinations"
+import { nCr } from "../combinations-permutations/combinations-permutations"
 
 /**
  * Calculates the binomial coefficient using the formula nCk * p^k * (1 - p)^(n - k).

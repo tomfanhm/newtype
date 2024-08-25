@@ -1,5 +1,5 @@
 export { default as binomial } from "./binomial/binomial"
-export { nCr, nPr } from "./combinations/combinations"
+export { nCr, nPr } from "./combinations-permutations/combinations-permutations"
 export { default as factorial } from "./factorial/factorial"
 export { default as gcd } from "./gcd/gcd"
 export { default as iqr } from "./iqr/iqr"
