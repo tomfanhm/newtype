@@ -1,3 +1,5 @@
+import { Prettify } from "@/lib/utils"
+
 type URLComponents = {
   href: string
   protocol: string
@@ -17,7 +19,7 @@ type URLComponents = {
  * @param url - The URL to parse.
  * @returns An object containing the components of the parsed URL.
  */
-export default function parseUrl(url: string): URLComponents {
+export default function parseUrl(url: string): Prettify<URLComponents> {
   const parsedUrl = new URL(url)
   return {
     href: parsedUrl.href,

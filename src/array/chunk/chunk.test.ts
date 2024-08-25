@@ -69,4 +69,10 @@ describe("chunk function", () => {
     chunks(arr, 2)
     expect(arr).toEqual(arrCopy)
   })
+
+  it("should throw an error when chunk size is not an integer", () => {
+    const array = [1, 2, 3]
+    const chunkSize = 1.5
+    expect(() => chunks(array, chunkSize)).toThrowError("Chunk size must be an integer.")
+  })
 })

@@ -3,6 +3,11 @@ import { q1, q2, q3, q4 } from "./quartile"
 
 describe("quartile functions", () => {
   describe("q1 (First Quartile)", () => {
+    it("should return the correct first quartile (Q1) for an odd number of elements", () => {
+      const numbers = [1, 3, 5, 7, 9]
+      expect(q1(numbers)).toBe(2)
+    })
+
     it("should return the first quartile (Q1) of a sorted array", () => {
       const numbers = [1, 2, 3, 4]
       expect(q1(numbers)).toBe(1.5)
@@ -40,6 +45,11 @@ describe("quartile functions", () => {
   })
 
   describe("q2 (Second Quartile)", () => {
+    it("should return the correct second quartile (Q2) for an odd number of elements", () => {
+      const numbers = [1, 3, 5, 7, 9]
+      expect(q2(numbers)).toBe(5)
+    })
+
     it("should return the second quartile (Q2) of a sorted array", () => {
       const numbers = [1, 2, 3, 4]
       expect(q2(numbers)).toBe(2.5)
@@ -77,6 +87,11 @@ describe("quartile functions", () => {
   })
 
   describe("q3 (Third Quartile)", () => {
+    it("should return the correct third quartile (Q3) for an odd number of elements", () => {
+      const numbers = [1, 3, 5, 7, 9]
+      expect(q3(numbers)).toBe(8)
+    })
+
     it("should return the third quartile (Q3) of a sorted array", () => {
       const numbers = [1, 2, 3, 4]
       expect(q3(numbers)).toBe(3.5)
@@ -114,6 +129,11 @@ describe("quartile functions", () => {
   })
 
   describe("q4 (Fourth Quartile)", () => {
+    it("should return the correct fourth quartile (Q4) for an odd number of elements", () => {
+      const numbers = [1, 3, 5, 7, 9]
+      expect(q4(numbers)).toBe(9)
+    })
+
     it("should return the fourth quartile (Q4) of a sorted array", () => {
       const numbers = [1, 2, 3, 4]
       expect(q4(numbers)).toBe(4)

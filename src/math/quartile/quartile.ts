@@ -6,13 +6,15 @@
  * @throws An error if the array contains less than 4 elements.
  */
 function calculateQuartile(numbers: number[], quartile: 0.25 | 0.5 | 0.75 | 1): number {
-  if (numbers.length < 4) throw new Error("The array must contain at least 4 elements")
-  const sortedNumbers = numbers.slice().sort((a, b) => a - b)
-  const pos = (sortedNumbers.length - 1) * quartile
-  if (pos % 1 === 0) return sortedNumbers[pos]
+  if (numbers.length < 4) throw new Error("The array must contain at least 4 elements.")
+  const sorted = numbers.slice().sort((a, b) => a - b)
+  if (quartile === 1) return sorted[sorted.length - 1]
+  // (n + 1) / 4
+  const pos = (sorted.length + 1) * quartile - 1
   const lowerIndex = Math.floor(pos)
   const upperIndex = Math.ceil(pos)
-  return (sortedNumbers[lowerIndex] + sortedNumbers[upperIndex]) / 2
+  if (lowerIndex === upperIndex) return sorted[lowerIndex]
+  return (sorted[lowerIndex] + sorted[upperIndex]) / 2
 }
 
 /**

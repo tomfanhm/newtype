@@ -7,6 +7,8 @@ import * as systemMap from "./system"
 
 export default {
   // Array
+  all: arrayMap.all,
+  any: arrayMap.any,
   bubbleSort: arrayMap.bubbleSort,
   chunk: arrayMap.chunk,
   compact: arrayMap.compact,
@@ -14,13 +16,17 @@ export default {
   insertionSort: arrayMap.insertionSort,
   intersection: arrayMap.intersection,
   mergeSort: arrayMap.mergeSort,
+  partition: arrayMap.partition,
+  permutations: arrayMap.permutations,
   quickSort: arrayMap.quickSort,
+  range: arrayMap.range,
+  sample: arrayMap.sample,
   selectionSort: arrayMap.selectionSort,
   shuffle: arrayMap.shuffle,
   timSort: arrayMap.timSort,
+  unique: arrayMap.unique,
   // Core
   buildUrl: coreMap.buildUrl,
-  checkRectangleCollision: coreMap.checkRectangleCollision,
   createCounter: coreMap.createCounter,
   isArray: coreMap.isArray,
   isBigInt: coreMap.isBigInt,
@@ -36,7 +42,6 @@ export default {
   isString: coreMap.isString,
   isSymbol: coreMap.isSymbol,
   isUndefined: coreMap.isUndefined,
-  lerp: coreMap.lerp,
   parseUrl: coreMap.parseUrl,
   scheduler: coreMap.scheduler,
   sleep: coreMap.sleep,
@@ -47,13 +52,14 @@ export default {
   isWeekend: dateMap.isWeekend,
   // Math
   binomial: mathMap.binomial,
+  nCr: mathMap.nCr,
+  nPr: mathMap.nPr,
   factorial: mathMap.factorial,
+  gcd: mathMap.gcd,
   iqr: mathMap.iqr,
   mean: mathMap.mean,
   median: mathMap.median,
   mode: mathMap.mode,
-  nCr: mathMap.nCr,
-  nPr: mathMap.nPr,
   q1: mathMap.q1,
   q2: mathMap.q2,
   q3: mathMap.q3,
@@ -67,6 +73,8 @@ export default {
   isUUID: stringMap.isUUID,
   numberToRoman: stringMap.numberToRoman,
   replaceAll: stringMap.replaceAll,
+  reverse: stringMap.reverse,
+  truncate: stringMap.truncate,
   // System
   measurePerformance: systemMap.measurePerformance,
 }

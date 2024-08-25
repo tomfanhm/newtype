@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest"
 import parseUrl from "./parse-url"
 
-describe("parseUrl", () => {
+describe("parseUrl function", () => {
   it("should parse a simple URL with no path, search, or hash", () => {
     const url = "https://example.com"
     const result = parseUrl(url)

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest"
-import { gcd } from "./gcd"
+import gcd from "./gcd"
 
 describe("gcd function", () => {
   it("should return the GCD of an array of positive numbers", () => {
@@ -25,8 +25,8 @@ describe("gcd function", () => {
   })
 
   it("should throw an error if the array has less than 2 elements", () => {
-    expect(() => gcd([])).toThrow("Array should have at least 2 elements")
-    expect(() => gcd([1])).toThrow("Array should have at least 2 elements")
+    expect(() => gcd([])).toThrow("Array should have at least 2 elements.")
+    expect(() => gcd([1])).toThrow("Array should have at least 2 elements.")
   })
 
   it("should handle arrays with negative numbers", () => {
