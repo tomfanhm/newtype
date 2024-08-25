@@ -9,8 +9,8 @@ export default function capitalize(input: string, stopwords: string[] = []): str
 
   return input
     .split(" ")
-    .map((word) => word.trim())
-    .filter(Boolean)
+    .map((word) => word.trim()) // Remove leading/trailing whitespace
+    .filter(Boolean) // Remove empty strings
     .map((word) => {
       if (stopwordSet.has(word.toLowerCase())) {
         return word
