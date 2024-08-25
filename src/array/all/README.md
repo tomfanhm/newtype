@@ -14,6 +14,10 @@ Checks if all elements in the array evaluate to `true`.
 | --------- | ------------------------------------------------------------- |
 | `boolean` | `True` if all elements evaluate to `true`, `false` otherwise. |
 
+## Errors
+
+This function does not throw any explicit errors.
+
 ## Examples
 
 ```typescript

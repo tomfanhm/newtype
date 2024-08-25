@@ -14,6 +14,10 @@ Checks if any element in the array is truthy.
 | --------- | ---------------------------------------------------------------- |
 | `boolean` | `True` if any element in the array is truthy, `false` otherwise. |
 
+## Errors
+
+This function does not throw any explicit errors.
+
 ## Examples
 
 ```typescript

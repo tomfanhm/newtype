@@ -112,6 +112,10 @@ Subtracts the specified number of years from the current date.
 | ------ | ------------------------------------------------------------- |
 | `Date` | The new date after subtracting the specified number of years. |
 
+## Errors
+
+This function does not throw any explicit errors.
+
 ## Examples
 
 ```typescript

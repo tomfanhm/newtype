@@ -1,6 +1,6 @@
-# Function `bubbleSort`
+# Function `heapSort`
 
-Sorts an array using the bubble sort algorithm.
+Sorts an array using the Heap Sort algorithm.
 
 ## Parameters
 
@@ -23,17 +23,17 @@ This function does not throw any explicit errors.
 
 ```typescript
 // Example with numbers in ascending order
-const numbers = [5, 3, 8, 4, 2]
-const sortedNumbers = bubbleSort(numbers, (a, b) => a - b)
-console.log(sortedNumbers) // [2, 3, 4, 5, 8]
+const numbers = [4, 10, 3, 5, 1]
+const sortedNumbers = heapSort(numbers, (a, b) => a - b)
+console.log(sortedNumbers) // [1, 3, 4, 5, 10]
 
 // Example with strings in descending order
 const strings = ["apple", "orange", "banana", "pear"]
-const sortedStrings = bubbleSort(strings, (a, b) => b.localeCompare(a))
+const sortedStrings = heapSort(strings, (a, b) => b.localeCompare(a))
 console.log(sortedStrings) // ["pear", "orange", "banana", "apple"]
 
 // Example with objects
 const objects = [{ id: 3 }, { id: 1 }, { id: 2 }]
-const sortedObjects = bubbleSort(objects, (a, b) => a.id - b.id)
+const sortedObjects = heapSort(objects, (a, b) => a.id - b.id)
 console.log(sortedObjects) // [{ id: 1 }, { id: 2 }, { id: 3 }]
 ```

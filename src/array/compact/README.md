@@ -14,6 +14,10 @@ Removes `null` and `undefined` values from an array.
 | ------------------ | ------------------------------------------------------- |
 | `NonNullable<T>[]` | A new array with `null` and `undefined` values removed. |
 
+## Errors
+
+This function does not throw any explicit errors.
+
 ## Examples
 
 ```typescript

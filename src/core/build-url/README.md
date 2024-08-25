@@ -15,6 +15,12 @@ Builds a URL by appending query parameters to a base URL.
 | -------- | ---------------------------------------------------- |
 | `string` | The complete URL with the appended query parameters. |
 
+## Errors
+
+| Type    | Description                                    |
+| ------- | ---------------------------------------------- |
+| `Error` | Thrown if `baseUrl` is not a valid URL string. |
+
 ## Examples
 
 ```typescript

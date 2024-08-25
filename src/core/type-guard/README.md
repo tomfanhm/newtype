@@ -228,6 +228,10 @@ Checks if a value is an instance of `Error`.
 | --------- | ----------------------------------------------------- |
 | `boolean` | `true` if the value is an `Error`, `false` otherwise. |
 
+## Errors
+
+This function does not throw any explicit errors.
+
 ## Examples
 
 ```typescript

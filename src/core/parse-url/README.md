@@ -29,6 +29,12 @@ Parses a URL and returns its components.
 | `hash`         | `string`             | The fragment identifier, including the leading `#`.            |
 | `origin`       | `string`             | The origin of the URL (protocol, hostname, and port).          |
 
+## Errors
+
+| Type    | Description                                  |
+| ------- | -------------------------------------------- |
+| `Error` | Thrown if an invalid URL string is provided. |
+
 ## Examples
 
 ```typescript

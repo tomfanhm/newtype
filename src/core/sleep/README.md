@@ -14,6 +14,10 @@ Pauses the execution for the specified number of milliseconds.
 | --------------- | ------------------------------------------------------------------- |
 | `Promise<void>` | A promise that resolves after the specified number of milliseconds. |
 
+## Errors
+
+This function does not throw any explicit errors.
+
 ## Examples
 
 ```typescript

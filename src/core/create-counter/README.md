@@ -40,6 +40,10 @@ Resets the counter to 0 and returns the updated count.
 | -------- | ---------------------------------- |
 | `number` | The updated count after resetting. |
 
+## Errors
+
+This function does not throw any explicit errors.
+
 ## Examples
 
 ```typescript

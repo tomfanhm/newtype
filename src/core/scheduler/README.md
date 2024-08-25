@@ -25,6 +25,10 @@ Starts the scheduler, which begins executing the callback function at the specif
 
 Stops the scheduler, halting any further executions of the callback function.
 
+## Errors
+
+This function does not throw any explicit errors.
+
 ## Examples
 
 ```typescript
