@@ -23,12 +23,7 @@ Converts a number to its Roman numeral representation.
 ## Examples
 
 ```typescript
-const result1 = numberToRoman(1987)
-console.log(result1) // "MCMLXXXVII"
-
-const result2 = numberToRoman(3999)
-console.log(result2) // "MMMCMXCIX"
-
-const result3 = numberToRoman(4)
-console.log(result3) // "IV"
+console.log(numberToRoman(1987)) // "MCMLXXXVII"
+console.log(numberToRoman(3999)) // "MMMCMXCIX"
+console.log(numberToRoman(4)) // "IV"
 ```

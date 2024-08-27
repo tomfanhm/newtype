@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest"
-import { hypergeometric } from "./hypergeometric"
+import hypergeometric from "./hypergeometric"
 
 describe("hypergeometric function", () => {
   it("should calculate the hypergeometric distribution for valid inputs", () => {

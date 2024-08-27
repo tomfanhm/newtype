@@ -1,8 +1,14 @@
+import any from "@/array/any/any"
+
 function getGCD(a: number, b: number): number {
   if (b === 0) {
     return a
   }
   return getGCD(b, a % b)
+}
+
+function haveZero(arr: number[]): boolean {
+  return any(arr.map((x) => x === 0))
 }
 
 /**
@@ -13,5 +19,6 @@ function getGCD(a: number, b: number): number {
  */
 export default function gcd(arr: number[]): number {
   if (arr.length <= 1) throw new Error("Array should have at least 2 elements.")
+  if (haveZero(arr)) throw new Error("Array should not contain 0.")
   return Math.abs(arr.reduce(getGCD))
 }

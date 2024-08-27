@@ -6,7 +6,8 @@ import mean from "../mean/mean"
  * @param numbers - The array of numbers.
  * @param isSample - Optional. Specifies whether the array represents a sample. Default is true.
  * @returns The variance of the array of numbers.
- * @throws If the array is empty or if it contains only one element and isSample is true.
+ * @throws If the array is empty.
+ * @throws If the array contains only one element and isSample is true.
  */
 export default function variance(numbers: number[], isSample: boolean = true): number {
   if (numbers.length === 0) throw new Error("The array is empty.")

@@ -1,6 +1,6 @@
 /**
  * Generates all possible permutations of an array.
- * @reference https://stackoverflow.com/questions/9960908/permutations-in-javascript
+ * @link https://stackoverflow.com/questions/9960908/permutations-in-javascript
  *
  * @template T - The type of elements in the array.
  * @param array - The array to generate permutations from.

@@ -143,12 +143,12 @@ describe("parseUrl function", () => {
 
   it("should throw an error for an invalid URL", () => {
     const url = "not a valid url"
-    expect(() => parseUrl(url)).toThrowError(TypeError)
+    expect(() => parseUrl(url)).toThrow(TypeError)
   })
 
   it("should throw an error for an empty string", () => {
     const url = ""
-    expect(() => parseUrl(url)).toThrowError(TypeError)
+    expect(() => parseUrl(url)).toThrow(TypeError)
   })
 
   it("should parse a file URL", () => {

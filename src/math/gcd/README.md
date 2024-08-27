@@ -19,6 +19,7 @@ Calculates the greatest common divisor (GCD) of an array of numbers.
 | Type    | Description                                    |
 | ------- | ---------------------------------------------- |
 | `Error` | Thrown if the array has fewer than 2 elements. |
+| `Error` | Throw if the array contains 0.                 |
 
 ## Examples
 

@@ -1,3 +1,5 @@
+import isDate from "@/core/is-date/is-date"
+
 /**
  * Checks if a given date falls on a weekend.
  *
@@ -7,7 +9,7 @@
  */
 export default function isWeekend(date: string): boolean {
   const d = new Date(date)
-  if (isNaN(d.getTime())) throw new Error("Invalid date string provided.")
+  if (!isDate(d)) throw new Error("Invalid date string provided.")
   const dayOfWeek = d.getDay() // Sunday - 0, Monday - 1, ..., Saturday - 6
   return dayOfWeek === 0 || dayOfWeek === 6
 }

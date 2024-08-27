@@ -59,6 +59,6 @@ describe("isWeekend function", () => {
 
   it("should handle invalid dates", () => {
     const date = "invalid"
-    expect(() => isWeekend(date)).toThrowError("Invalid date string provided.")
+    expect(() => isWeekend(date)).toThrow("Invalid date string provided.")
   })
 })

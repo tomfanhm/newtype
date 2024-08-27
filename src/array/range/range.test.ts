@@ -26,8 +26,14 @@ describe("range function", () => {
     expect(range(5, 5)).toEqual([])
   })
 
+  it("should throw an error if start, end, or step is not a number", () => {
+    expect(() => range(NaN, 5)).toThrow("Start, end, and step must be numbers.")
+    expect(() => range(1, NaN)).toThrow("Start, end, and step must be numbers.")
+    expect(() => range(1, 5, NaN)).toThrow("Start, end, and step must be numbers.")
+  })
+
   it("should throw an error if step is zero", () => {
-    expect(() => range(1, 5, 0)).toThrowError("Step cannot be zero.")
+    expect(() => range(1, 5, 0)).toThrow("Step cannot be zero.")
   })
 
   it("should handle fractional steps correctly", () => {

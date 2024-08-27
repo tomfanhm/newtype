@@ -26,7 +26,7 @@ describe("numberToRoman function", () => {
   })
 
   it("should throw an error for non-integer values", () => {
-    expect(() => numberToRoman(3.5)).toThrow()
-    expect(() => numberToRoman(NaN)).toThrow()
+    expect(() => numberToRoman(3.5)).toThrow("Invalid input. Number must be an integer.")
+    expect(() => numberToRoman(NaN)).toThrow("Invalid input. Number must be an integer.")
   })
 })

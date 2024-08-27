@@ -21,12 +21,7 @@ This function does not throw any explicit errors.
 ## Examples
 
 ```typescript
-const validUUID = "123e4567-e89b-12d3-a456-426614174000"
-console.log(isUUID(validUUID)) // true
-
-const invalidUUID = "123e4567-e89b-12d3-a456-42661417400"
-console.log(isUUID(invalidUUID)) // false
-
-const anotherInvalidUUID = "not-a-uuid"
-console.log(isUUID(anotherInvalidUUID)) // false
+console.log(isUUID("123e4567-e89b-12d3-a456-426614174000")) // true
+console.log(isUUID("123e4567-e89b-12d3-a456-42661417400")) // false
+console.log(isUUID("not-a-uuid")) // false
 ```

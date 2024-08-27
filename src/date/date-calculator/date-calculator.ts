@@ -1,3 +1,5 @@
+import isDate from "@/core/is-date/is-date"
+
 // 24 * 60 * 60 * 1000
 const MILLISECONDS_IN_A_DAY = 86400000
 
@@ -5,9 +7,11 @@ const MILLISECONDS_IN_A_DAY = 86400000
  * A utility function that performs date calculations.
  * @param d - The input date.
  * @returns An object with methods to add or subtract days, months, and years from the input date.
+ * @throws An error if the input is not a valid date.
  */
 export default function dateCalculator(d: Date) {
   let date = new Date(d)
+  if (!isDate(d)) throw new Error("Invalid date provided.")
 
   return {
     /**

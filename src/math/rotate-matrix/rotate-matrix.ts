@@ -16,7 +16,7 @@ export default function rotateMatrix(
   }
   if (matrix.length === 0) return matrix
   if (!clockwise) degrees = 360 - degrees
-  let rotated = matrix.map((row) => [...row]) // Deep clone the matrix
+  let rotated = normalizeMatrix(matrix)
   const numRotations = (degrees / 90) % 4
 
   for (let r = 0; r < numRotations; r++) {
@@ -38,4 +38,9 @@ function rotate(matrix: number[][]): number[][] {
   }
 
   return rotated
+}
+
+function normalizeMatrix(matrix: number[][]): number[][] {
+  const maxLength = Math.max(...matrix.map((row) => row.length))
+  return matrix.map((row) => [...row, ...new Array(maxLength - row.length).fill(NaN)])
 }

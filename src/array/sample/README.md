@@ -6,7 +6,7 @@ Returns a sample of elements from an array.
 
 | Parameter | Type     | Description                                        |
 | --------- | -------- | -------------------------------------------------- |
-| `arr`     | `T[]`    | The array to sample from.                          |
+| `array`   | `T[]`    | The array to sample from.                          |
 | `count`   | `number` | The number of elements to sample. Defaults to `1`. |
 
 ## Returns

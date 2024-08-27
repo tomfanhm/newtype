@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest"
-import { poisson } from "./poisson"
+import poisson from "./poisson"
 
 describe("poisson function", () => {
   it("should calculate the Poisson probability mass function for valid inputs", () => {
@@ -32,5 +32,8 @@ describe("poisson function", () => {
 
   it("should throw an error when k is not an integer", () => {
     expect(() => poisson(5, 1.5)).toThrow("k must be an integer.")
+    expect(() => poisson(5, NaN)).toThrow("k must be an integer.")
+    expect(() => poisson(5, Infinity)).toThrow("k must be an integer.")
+    expect(() => poisson(5, -Infinity)).toThrow("k must be an integer.")
   })
 })

@@ -88,7 +88,7 @@ describe("rotateMatrix function", () => {
 
   it("should throw an error for an invalid rotation degree", () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    expect(() => rotateMatrix(matrix3x3, 45 as any)).toThrowError(
+    expect(() => rotateMatrix(matrix3x3, 45 as any)).toThrow(
       "Invalid rotation degree. Must be one of 90, 180, 270, 360."
     )
   })
@@ -122,5 +122,18 @@ describe("rotateMatrix function", () => {
 
   it("should handle empty matrix", () => {
     expect(rotateMatrix([], 90)).toEqual([])
+  })
+
+  it("should handle non-rectangular matrix", () => {
+    const matrix = [
+      [1, 2],
+      [3, 4, 5],
+    ]
+    const result90 = rotateMatrix(matrix, 90)
+    expect(result90).toEqual([
+      [3, 1],
+      [4, 2],
+      [5, NaN],
+    ])
   })
 })

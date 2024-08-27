@@ -1,3 +1,5 @@
+import isDate from "@/core/is-date/is-date"
+
 /**
  * Calculates the age based on the provided birth date.
  * @param birthDate - The birth date in string format (e.g. "YYYY-MM-DD").
@@ -6,7 +8,7 @@
  */
 export default function age(birthDate: string): number {
   const d = new Date(birthDate)
-  if (isNaN(d.getTime())) throw new Error("Invalid birth date string provided.")
+  if (!isDate(d)) throw new Error("Invalid birth date string provided.")
 
   const today = new Date()
   let age = today.getFullYear() - d.getFullYear()

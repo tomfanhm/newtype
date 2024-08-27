@@ -1,21 +1,20 @@
 export { default as buildUrl } from "./build-url/build-url"
 export { default as createCounter } from "./create-counter/create-counter"
+export { default as isArray } from "./is-array/is-array"
+export { default as isBigInt } from "./is-big-int/is-big-int"
+export { default as isBoolean } from "./is-boolean/is-boolean"
+export { default as isDate } from "./is-date/is-date"
+export { default as isError } from "./is-error/is-error"
+export { default as isFloat } from "./is-float/is-float"
+export { default as isFunction } from "./is-function/is-function"
+export { default as isInteger } from "./is-integer/is-integer"
+export { default as isNull } from "./is-null/is-null"
+export { default as isNumber } from "./is-number/is-number"
+export { default as isObject } from "./is-object/is-object"
+export { default as isString } from "./is-string/is-string"
+export { default as isSymbol } from "./is-symbol/is-symbol"
+export { default as isUndefined } from "./is-undefined/is-undefined"
 export { default as parseUrl } from "./parse-url/parse-url"
 export { default as scheduler } from "./scheduler/scheduler"
 export { default as sleep } from "./sleep/sleep"
-export {
-  isArray,
-  isBigInt,
-  isBoolean,
-  isDate,
-  isError,
-  isFloat,
-  isFunction,
-  isInteger,
-  isNull,
-  isNumber,
-  isObject,
-  isString,
-  isSymbol,
-  isUndefined,
-} from "./type-guard/type-guard"
+export { default as toType } from "./to-type/to-type"

@@ -18,9 +18,10 @@ Generates an array of numbers within a specified range.
 
 ## Errors
 
-| Type    | Description                       |
-| ------- | --------------------------------- |
-| `Error` | Thrown if the step value is zero. |
+| Type    | Description                                               |
+| ------- | --------------------------------------------------------- |
+| `Error` | Thrown if the step value is zero.                         |
+| `Error` | Thrown if the start, end, or step values are not numbers. |
 
 ## Examples
 

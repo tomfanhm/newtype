@@ -101,4 +101,16 @@ describe("dateCalculator function", () => {
     const newDate = calc.addYear(1)
     expect(newDate).toEqual(new Date("2024-07-25"))
   })
+
+  it("should not modify the original date object", () => {
+    const initialDate = new Date("2023-08-20")
+    const calc = dateCalculator(initialDate)
+    calc.addDay(5)
+    expect(initialDate).toEqual(new Date("2023-08-20"))
+  })
+
+  it("should throw an error if the input date is invalid", () => {
+    const invalidDate = new Date("invalid")
+    expect(() => dateCalculator(invalidDate)).toThrow("Invalid date provided.")
+  })
 })

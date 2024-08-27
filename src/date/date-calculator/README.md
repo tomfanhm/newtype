@@ -114,7 +114,9 @@ Subtracts the specified number of years from the current date.
 
 ## Errors
 
-This function does not throw any explicit errors.
+| Type    | Description                            |
+| ------- | -------------------------------------- |
+| `Error` | Thrown if an invalid date is provided. |
 
 ## Examples
 

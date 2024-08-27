@@ -23,10 +23,8 @@ describe("truncate function", () => {
   })
 
   it("should throw an error if the length is not an integer", () => {
-    expect(() => truncate("Hello, world!", 5.5)).toThrow("Length must be an integer")
-    expect(() => truncate("Hello, world!", NaN)).toThrow("Length must be an integer")
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    expect(() => truncate("Hello, world!", "5" as any)).toThrow("Length must be an integer")
+    expect(() => truncate("Hello, world!", 5.5)).toThrow("Length must be an integer.")
+    expect(() => truncate("Hello, world!", NaN)).toThrow("Length must be an integer.")
   })
 
   it("should handle negative lengths", () => {

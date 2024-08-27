@@ -6,7 +6,7 @@ Removes `null` and `undefined` values from an array.
 
 | Parameter | Type  | Description           |
 | --------- | ----- | --------------------- |
-| `arr`     | `T[]` | The array to compact. |
+| `array`   | `T[]` | The array to compact. |
 
 ## Returns
 

@@ -36,4 +36,9 @@ describe("isLeapYear function", () => {
     expect(isLeapYear(2000)).toBe(true)
     expect(isLeapYear(2400)).toBe(true)
   })
+
+  it("should handle NaN and Infinity", () => {
+    expect(() => isLeapYear(NaN)).toThrow("Invalid year provided.")
+    expect(() => isLeapYear(Infinity)).toThrow("Invalid year provided.")
+  })
 })

@@ -44,13 +44,13 @@ describe("chunk function", () => {
   it("should throw an error when chunk size is zero", () => {
     const array = [1, 2, 3]
     const chunkSize = 0
-    expect(() => chunks(array, chunkSize)).toThrowError("Chunk size must be greater than zero.")
+    expect(() => chunks(array, chunkSize)).toThrow("Chunk size must be greater than zero.")
   })
 
   it("should throw an error when chunk size is negative", () => {
     const array = [1, 2, 3]
     const chunkSize = -1
-    expect(() => chunks(array, chunkSize)).toThrowError("Chunk size must be greater than zero.")
+    expect(() => chunks(array, chunkSize)).toThrow("Chunk size must be greater than zero.")
   })
 
   it("should handle arrays with mixed types", () => {
@@ -73,6 +73,6 @@ describe("chunk function", () => {
   it("should throw an error when chunk size is not an integer", () => {
     const array = [1, 2, 3]
     const chunkSize = 1.5
-    expect(() => chunks(array, chunkSize)).toThrowError("Chunk size must be an integer.")
+    expect(() => chunks(array, chunkSize)).toThrow("Chunk size must be an integer.")
   })
 })

@@ -19,6 +19,7 @@ Checks if a given year is a leap year.
 | Type    | Description                                                                                    |
 | ------- | ---------------------------------------------------------------------------------------------- |
 | `Error` | Thrown if the year is less than 1582, as the Gregorian calendar was not introduced until 1582. |
+| `Error` | Thrown if the year is not an integer.                                                          |
 
 ## Examples
 

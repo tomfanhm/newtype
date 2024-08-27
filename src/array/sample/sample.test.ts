@@ -22,8 +22,8 @@ describe("sample function", () => {
 
   it("should throw an error if count is 0 or less", () => {
     const arr = [1, 2, 3, 4, 5]
-    expect(() => sample(arr, 0)).toThrowError("Count must be greater than 0")
-    expect(() => sample(arr, -1)).toThrowError("Count must be greater than 0")
+    expect(() => sample(arr, 0)).toThrow("Count must be greater than 0.")
+    expect(() => sample(arr, -1)).toThrow("Count must be greater than 0.")
   })
 
   it("should return the entire array if count is greater than the array length", () => {
@@ -53,7 +53,12 @@ describe("sample function", () => {
 
   it("should throw an error if count is not an integer", () => {
     const arr = [1, 2, 3, 4, 5]
-    expect(() => sample(arr, 1.5)).toThrowError("Count must be an integer")
+    expect(() => sample(arr, 1.5)).toThrow("Count must be an integer.")
+  })
+
+  it("should throw an error if count is NaN", () => {
+    const arr = [1, 2, 3, 4, 5]
+    expect(() => sample(arr, NaN)).toThrow("Count must be an integer.")
   })
 
   it("should not modify the original array", () => {

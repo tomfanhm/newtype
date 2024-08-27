@@ -1,3 +1,5 @@
+import isInteger from "@/core/is-integer/is-integer"
+
 /**
  * Converts a number to its Roman numeral representation.
  * @param num - The number to convert.
@@ -5,9 +7,7 @@
  * @throws If the input is not a valid integer or is outside the range of 1 to 3999.
  */
 export default function numberToRoman(num: number): string {
-  if (!Number.isInteger(num) || Number.isNaN(num)) {
-    throw new Error("Invalid input. Number must be an integer.")
-  }
+  if (!isInteger(num)) throw new Error("Invalid input. Number must be an integer.")
   if (num < 1 || num > 3999) throw new Error("Invalid input. Number must be between 1 and 3999.")
 
   const values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]

@@ -17,7 +17,8 @@ describe("age function", () => {
 
   it("should throw an error for an invalid birth date string", () => {
     const birthDate = "invalid"
-    expect(() => age(birthDate)).toThrowError("Invalid birth date string provided.")
+    expect(() => age(birthDate)).toThrow("Invalid birth date string provided.")
+    expect(() => age("")).toThrow("Invalid birth date string provided.")
   })
 
   it("should correctly calculate age when the birthday has already occurred this year", () => {
