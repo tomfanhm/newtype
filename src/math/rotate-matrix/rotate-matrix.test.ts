@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest"
+import { describe, expect, it } from "vitest"
 import rotateMatrix from "./rotate-matrix"
 
 describe("rotateMatrix function", () => {
@@ -89,7 +89,7 @@ describe("rotateMatrix function", () => {
   it("should throw an error for an invalid rotation degree", () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     expect(() => rotateMatrix(matrix3x3, 45 as any)).toThrow(
-      "Invalid rotation degree. Must be one of 90, 180, 270, 360."
+      "Invalid rotation degree. Must be one of 90, 180, 270, 360.",
     )
   })
 

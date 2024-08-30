@@ -1,4 +1,4 @@
-import { describe, it, expect, afterEach, beforeEach, vi } from "vitest"
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
 import age from "./age"
 
 const MOCK_DATE = "2024-08-23"

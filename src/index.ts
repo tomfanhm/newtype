@@ -5,79 +5,81 @@ import * as mathMap from "./math"
 import * as stringMap from "./string"
 import * as systemMap from "./system"
 
-export default {
-  // Array
-  all: arrayMap.all,
-  any: arrayMap.any,
-  bubbleSort: arrayMap.bubbleSort,
-  chunk: arrayMap.chunk,
-  compact: arrayMap.compact,
-  heapSort: arrayMap.heapSort,
-  insertionSort: arrayMap.insertionSort,
-  intersection: arrayMap.intersection,
-  mergeSort: arrayMap.mergeSort,
-  partition: arrayMap.partition,
-  permutations: arrayMap.permutations,
-  quickSort: arrayMap.quickSort,
-  range: arrayMap.range,
-  sample: arrayMap.sample,
-  selectionSort: arrayMap.selectionSort,
-  shuffle: arrayMap.shuffle,
-  timSort: arrayMap.timSort,
-  unique: arrayMap.unique,
-  // Core
-  buildUrl: coreMap.buildUrl,
-  createCounter: coreMap.createCounter,
-  isArray: coreMap.isArray,
-  isBigInt: coreMap.isBigInt,
-  isBoolean: coreMap.isBoolean,
-  isDate: coreMap.isDate,
-  isError: coreMap.isError,
-  isFloat: coreMap.isFloat,
-  isFunction: coreMap.isFunction,
-  isInteger: coreMap.isInteger,
-  isNull: coreMap.isNull,
-  isNumber: coreMap.isNumber,
-  isObject: coreMap.isObject,
-  isString: coreMap.isString,
-  isSymbol: coreMap.isSymbol,
-  isUndefined: coreMap.isUndefined,
-  parseUrl: coreMap.parseUrl,
-  scheduler: coreMap.scheduler,
-  sleep: coreMap.sleep,
-  toType: coreMap.toType,
-  // Date
-  age: dateMap.age,
-  dateCalculator: dateMap.dateCalculator,
-  isLeapYear: dateMap.isLeapYear,
-  isWeekend: dateMap.isWeekend,
-  // Math
-  nCr: mathMap.nCr,
-  nPr: mathMap.nPr,
-  binomial: mathMap.binomial,
-  factorial: mathMap.factorial,
-  gcd: mathMap.gcd,
-  hypergeometric: mathMap.hypergeometric,
-  iqr: mathMap.iqr,
-  lerp: mathMap.lerp,
-  mean: mathMap.mean,
-  median: mathMap.median,
-  mode: mathMap.mode,
-  poisson: mathMap.poisson,
-  q1: mathMap.q1,
-  q2: mathMap.q2,
-  q3: mathMap.q3,
-  q4: mathMap.q4,
-  rotateMatrix: mathMap.rotateMatrix,
-  std: mathMap.std,
-  sum: mathMap.sum,
-  variance: mathMap.variance,
-  // String
-  isUUID: stringMap.isUUID,
-  numberToRoman: stringMap.numberToRoman,
-  replaceAll: stringMap.replaceAll,
-  reverse: stringMap.reverse,
-  truncate: stringMap.truncate,
-  // System
-  measurePerformance: systemMap.measurePerformance,
-}
+// Array Functions
+export const {
+  all,
+  any,
+  bubbleSort,
+  chunk,
+  compact,
+  heapSort,
+  insertionSort,
+  intersection,
+  mergeSort,
+  partition,
+  permutations,
+  quickSort,
+  range,
+  sample,
+  selectionSort,
+  shuffle,
+  timSort,
+  unique,
+} = arrayMap
+
+// Core Functions
+export const {
+  buildUrl,
+  createCounter,
+  isArray,
+  isBigInt,
+  isBoolean,
+  isDate,
+  isError,
+  isFloat,
+  isFunction,
+  isInteger,
+  isNull,
+  isNumber,
+  isObject,
+  isString,
+  isSymbol,
+  isUndefined,
+  parseUrl,
+  scheduler,
+  sleep,
+  toType,
+} = coreMap
+
+// Date Functions
+export const { age, dateCalculator, isLeapYear, isWeekend } = dateMap
+
+// Math Functions
+export const {
+  nCr,
+  nPr,
+  binomial,
+  factorial,
+  gcd,
+  hypergeometric,
+  iqr,
+  lerp,
+  mean,
+  median,
+  mode,
+  poisson,
+  q1,
+  q2,
+  q3,
+  q4,
+  rotateMatrix,
+  std,
+  sum,
+  variance,
+} = mathMap
+
+// String Functions
+export const { isUUID, numberToRoman, replaceAll, reverse, truncate } = stringMap
+
+// System Functions
+export const { measurePerformance } = systemMap

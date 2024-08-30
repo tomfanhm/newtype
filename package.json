@@ -20,40 +20,40 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.js"
+      "require": "./dist/index.cjs"
     },
     "./array": {
       "import": "./dist/array.js",
-      "require": "./dist/array.js"
+      "require": "./dist/array.cjs"
     },
     "./core": {
       "import": "./dist/core.js",
-      "require": "./dist/core.js"
+      "require": "./dist/core.cjs"
     },
     "./date": {
       "import": "./dist/date.js",
-      "require": "./dist/date.js"
+      "require": "./dist/date.cjs"
     },
     "./math": {
       "import": "./dist/math.js",
-      "require": "./dist/math.js"
+      "require": "./dist/math.cjs"
     },
     "./string": {
       "import": "./dist/string.js",
-      "require": "./dist/string.js"
+      "require": "./dist/string.cjs"
     },
     "./system": {
       "import": "./dist/system.js",
-      "require": "./dist/system.js"
+      "require": "./dist/system.cjs"
     }
   },
   "types": "./dist/index.d.ts",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -67,6 +67,7 @@
     "@types/uuid": "^10.0.0",
     "eslint": "^9.9.0",
     "globals": "^15.9.0",
+    "prettier-plugin-organize-imports": "^4.0.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.1.0",
     "uuid": "^10.0.0",

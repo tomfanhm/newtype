@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest"
+import { describe, expect, it } from "vitest"
 import numberToRoman from "./number-to-roman"
 
 describe("numberToRoman function", () => {

@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest"
+import { describe, expect, it } from "vitest"
 import partition from "./partition"
 
 describe("partition function", () => {
@@ -82,7 +82,10 @@ describe("partition function", () => {
 
   it("should handle custom objects with methods in the callback", () => {
     class Item {
-      constructor(public name: string, public value: number) {}
+      constructor(
+        public name: string,
+        public value: number,
+      ) {}
       isValuable() {
         return this.value > 50
       }

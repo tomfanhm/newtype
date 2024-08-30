@@ -9,7 +9,7 @@
 export default function rotateMatrix(
   matrix: number[][],
   degrees: 90 | 180 | 270 | 360,
-  clockwise: boolean = true
+  clockwise: boolean = true,
 ): number[][] {
   if (![90, 180, 270, 360].includes(degrees)) {
     throw new Error("Invalid rotation degree. Must be one of 90, 180, 270, 360.")

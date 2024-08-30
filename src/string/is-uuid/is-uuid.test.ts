@@ -1,6 +1,6 @@
-import { describe, it, expect } from "vitest"
-import isUUID from "./is-uuid"
 import { v1 as uuidv1, v3 as uuidv3, v4 as uuidv4, v5 as uuidv5 } from "uuid"
+import { describe, expect, it } from "vitest"
+import isUUID from "./is-uuid"
 
 describe("isUUID function", () => {
   it("should return true for valid UUIDs", () => {

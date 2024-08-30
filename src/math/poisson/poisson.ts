@@ -1,5 +1,5 @@
-import factorial from "../factorial/factorial"
 import isInteger from "@/core/is-integer/is-integer"
+import factorial from "../factorial/factorial"
 
 /**
  * Calculates the probability mass function value of the Poisson distribution.

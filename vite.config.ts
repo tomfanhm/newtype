@@ -19,13 +19,7 @@ export default defineConfig({
   mode: "production",
   build: {
     lib: {
-      entry: resolve("./src/index.ts"),
-      fileName: (format, entryName) => `${entryName}.js`,
-      formats: ["es", "cjs"],
-    },
-    rollupOptions: {
-      external: [...Object.keys(globals)],
-      input: {
+      entry: {
         index: resolve("./src/index.ts"),
         array: resolve("./src/array/index.ts"),
         core: resolve("./src/core/index.ts"),
@@ -34,11 +28,20 @@ export default defineConfig({
         string: resolve("./src/string/index.ts"),
         system: resolve("./src/system/index.ts"),
       },
+      fileName: (format, entryName) => {
+        if (format === "es") {
+          return `${entryName}.js`
+        }
+        return `${entryName}.${format}`
+      },
+    },
+    rollupOptions: {
+      external: [...Object.keys(globals)],
     },
   },
   plugins: [
     dts({
-      exclude: ["**/*.test.ts", "demo/**/*"],
+      exclude: ["**/*.test.ts"],
     }),
     tsconfigPaths(),
   ],

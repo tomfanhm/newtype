@@ -14,6 +14,6 @@ export default function partition<T>(array: T[], callback: (element: T) => boole
       acc[callback(element) ? 0 : 1].push(element)
       return acc
     },
-    [[], []] as [T[], T[]]
+    [[], []] as [T[], T[]],
   )
 }

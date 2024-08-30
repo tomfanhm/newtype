@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest"
+import { describe, expect, it } from "vitest"
 import hypergeometric from "./hypergeometric"
 
 describe("hypergeometric function", () => {
@@ -30,7 +30,7 @@ describe("hypergeometric function", () => {
 
   it("should throw an error when K is greater than N", () => {
     expect(() => hypergeometric(50, 60, 10, 3)).toThrow(
-      "Number of successes K cannot be greater than the population size N."
+      "Number of successes K cannot be greater than the population size N.",
     )
   })
 
@@ -40,10 +40,10 @@ describe("hypergeometric function", () => {
 
   it("should throw an error when k is greater than the smaller of K or n", () => {
     expect(() => hypergeometric(50, 5, 10, 6)).toThrow(
-      "Observed successes k cannot be greater than the smaller of K or n."
+      "Observed successes k cannot be greater than the smaller of K or n.",
     )
     expect(() => hypergeometric(50, 5, 3, 4)).toThrow(
-      "Observed successes k cannot be greater than the smaller of K or n."
+      "Observed successes k cannot be greater than the smaller of K or n.",
     )
   })
 })
