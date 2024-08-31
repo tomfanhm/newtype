@@ -29,37 +29,31 @@
     },
     "./array": {
       "import": "./dist/array.js",
-      "require": "./dist/array.cjs",
-      "types": "./dist/array/index.d.ts"
+      "require": "./dist/array.cjs"
     },
     "./core": {
       "import": "./dist/core.js",
-      "require": "./dist/core.cjs",
-      "types": "./dist/core/index.d.ts"
+      "require": "./dist/core.cjs"
     },
     "./date": {
       "import": "./dist/date.js",
-      "require": "./dist/date.cjs",
-      "types": "./dist/date/index.d.ts"
+      "require": "./dist/date.cjs"
     },
     "./math": {
       "import": "./dist/math.js",
-      "require": "./dist/math.cjs",
-      "types": "./dist/math/index.d.ts"
+      "require": "./dist/math.cjs"
     },
     "./string": {
       "import": "./dist/string.js",
-      "require": "./dist/string.cjs",
-      "types": "./dist/string/index.d.ts"
+      "require": "./dist/string.cjs"
     },
     "./system": {
       "import": "./dist/system.js",
-      "require": "./dist/system.cjs",
-      "types": "./dist/system/index.d.ts"
+      "require": "./dist/system.cjs"
     }
   },
   "types": "./dist/index.d.ts",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
