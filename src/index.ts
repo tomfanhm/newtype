@@ -1,12 +1,4 @@
-import * as arrayMap from "./array"
-import * as coreMap from "./core"
-import * as dateMap from "./date"
-import * as mathMap from "./math"
-import * as stringMap from "./string"
-import * as systemMap from "./system"
-
-// Array Functions
-export const {
+export {
   all,
   any,
   bubbleSort,
@@ -25,10 +17,9 @@ export const {
   shuffle,
   timSort,
   unique,
-} = arrayMap
+} from "./array/index"
 
-// Core Functions
-export const {
+export {
   buildUrl,
   createCounter,
   isArray,
@@ -49,15 +40,11 @@ export const {
   scheduler,
   sleep,
   toType,
-} = coreMap
+} from "./core/index"
 
-// Date Functions
-export const { age, dateCalculator, isLeapYear, isWeekend } = dateMap
+export { age, dateCalculator, isLeapYear, isWeekend } from "./date/index"
 
-// Math Functions
-export const {
-  nCr,
-  nPr,
+export {
   binomial,
   factorial,
   gcd,
@@ -67,6 +54,8 @@ export const {
   mean,
   median,
   mode,
+  nCr,
+  nPr,
   poisson,
   q1,
   q2,
@@ -76,10 +65,8 @@ export const {
   std,
   sum,
   variance,
-} = mathMap
+} from "./math/index"
 
-// String Functions
-export const { isUUID, numberToRoman, replaceAll, reverse, truncate } = stringMap
+export { isUUID, numberToRoman, replaceAll, reverse, truncate } from "./string/index"
 
-// System Functions
-export const { measurePerformance } = systemMap
+export { measurePerformance } from "./system/index"
