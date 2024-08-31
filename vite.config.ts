@@ -16,8 +16,10 @@ function resolve(str: string) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  mode: "production",
   build: {
+    emptyOutDir: false,
+    outDir: "dist",
+    sourcemap: true,
     lib: {
       entry: {
         index: resolve("./src/index.ts"),

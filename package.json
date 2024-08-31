@@ -18,7 +18,7 @@
   "description": "A TypeScript library packed with handy functions designed to accelerate development across different platforms.",
   "type": "module",
   "files": [
-    "dist"
+    "dist/*"
   ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -53,7 +53,7 @@
     }
   },
   "types": "./dist/index.d.ts",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
