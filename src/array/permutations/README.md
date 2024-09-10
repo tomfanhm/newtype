@@ -4,9 +4,9 @@ Generates all possible permutations of an array.
 
 ## Parameters
 
-| Parameter | Type  | Description                              |
-| --------- | ----- | ---------------------------------------- |
-| `array`   | `T[]` | The array to generate permutations from. |
+| Parameter | Type               | Description                              |
+| --------- | ------------------ | ---------------------------------------- |
+| `array`   | `ReadonlyArray<T>` | The array to generate permutations from. |
 
 ## Returns
 

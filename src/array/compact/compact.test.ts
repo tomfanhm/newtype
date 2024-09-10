@@ -55,4 +55,10 @@ describe("compact function", () => {
     const expected = [[1, null], [undefined, 2], 3]
     expect(compact(input)).toEqual(expected)
   })
+
+  it("should not modify the original array", () => {
+    const input = [1, null, undefined, 2, 3, undefined, 4]
+    compact(input)
+    expect(input).toEqual([1, null, undefined, 2, 3, undefined, 4])
+  })
 })

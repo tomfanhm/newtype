@@ -4,10 +4,10 @@ Returns an array containing the intersection of two arrays.
 
 ## Parameters
 
-| Parameter | Type  | Description       |
-| --------- | ----- | ----------------- |
-| `array1`  | `T[]` | The first array.  |
-| `array2`  | `T[]` | The second array. |
+| Parameter | Type               | Description       |
+| --------- | ------------------ | ----------------- |
+| `array1`  | `ReadonlyArray<T>` | The first array.  |
+| `array2`  | `ReadonlyArray<T>` | The second array. |
 
 ## Returns
 

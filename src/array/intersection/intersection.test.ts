@@ -96,4 +96,12 @@ describe("intersection function", () => {
     const result = intersection(array1, array2)
     expect(result).toEqual(Array.from({ length: 50000 }, (_, i) => i + 50000))
   })
+
+  it("should not modify the original arrays", () => {
+    const array1 = [1, 2, 3]
+    const array2 = [2, 3, 4]
+    intersection(array1, array2)
+    expect(array1).toEqual([1, 2, 3])
+    expect(array2).toEqual([2, 3, 4])
+  })
 })

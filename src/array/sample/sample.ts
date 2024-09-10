@@ -10,7 +10,7 @@ import shuffle from "../shuffle/shuffle"
  * @returns An array containing the sampled elements.
  * @throws If count is less than or equal to 0 or not an integer.
  */
-export default function sample<T>(array: T[], count: number = 1): T[] {
+export default function sample<T>(array: ReadonlyArray<T>, count: number = 1): T[] {
   if (!isInteger(count)) throw new Error("Count must be an integer.")
   if (count <= 0) throw new Error("Count must be greater than 0.")
   const shuffled = shuffle(array)

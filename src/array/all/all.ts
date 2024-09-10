@@ -5,6 +5,6 @@
  * @param array - The array to check.
  * @returns True if all elements evaluate to true, false otherwise.
  */
-export default function all<T>(array: T[]): boolean {
+export default function all<T>(array: ReadonlyArray<T>): boolean {
   return array.every(Boolean)
 }

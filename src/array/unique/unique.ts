@@ -5,6 +5,6 @@
  * @param array - The array to remove duplicates from.
  * @returns A new array with duplicate elements removed.
  */
-export default function unique<T>(array: T[]): T[] {
+export default function unique<T>(array: ReadonlyArray<T>): T[] {
   return Array.from(new Set(array))
 }

@@ -53,7 +53,7 @@ function recursiveMergeSort<T>(arr: T[], l: number, r: number, compare: (a: T, b
  * @param compare A function that defines the order of the elements. It should return a negative value if `a` should be sorted before `b`, a positive value if `a` should be sorted after `b`, and 0 if `a` and `b` are equal.
  * @returns The sorted array.
  */
-export default function mergeSort<T>(array: T[], compare: (a: T, b: T) => number): T[] {
+export default function mergeSort<T>(array: ReadonlyArray<T>, compare: (a: T, b: T) => number): T[] {
   const clone = [...array]
   recursiveMergeSort(clone, 0, clone.length - 1, compare)
   return clone

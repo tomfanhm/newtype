@@ -54,7 +54,7 @@ function merge<T>(arr: T[], left: number, mid: number, right: number, compare: (
  * @param compare A function that defines the order of the elements. It should return a negative value if `a` should be sorted before `b`, a positive value if `a` should be sorted after `b`, and 0 if `a` and `b` are equal.
  * @returns The sorted array.
  */
-export default function timSort<T>(array: T[], compare: (a: T, b: T) => number): T[] {
+export default function timSort<T>(array: ReadonlyArray<T>, compare: (a: T, b: T) => number): T[] {
   const clone = [...array]
   const n = clone.length
 

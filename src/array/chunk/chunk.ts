@@ -9,7 +9,7 @@ import isInteger from "@/core/is-integer/is-integer"
  * @returns An array of chunks.
  * @throws If the chunk size is less than or equal to zero or not an integer.
  */
-export default function chunk<T>(array: T[], chunkSize: number): T[][] {
+export default function chunk<T>(array: ReadonlyArray<T>, chunkSize: number): T[][] {
   if (chunkSize <= 0) throw new Error("Chunk size must be greater than zero.")
   if (!isInteger(chunkSize)) throw new Error("Chunk size must be an integer.")
   const result: T[][] = []

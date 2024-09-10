@@ -6,7 +6,7 @@ Partitions an array into two separate arrays based on a given callback function.
 
 | Parameter  | Type                      | Description                                                                                                 |
 | ---------- | ------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `array`    | `T[]`                     | The array to be partitioned.                                                                                |
+| `array`    | `ReadonlyArray<T>`        | The array to be partitioned.                                                                                |
 | `callback` | `(element: T) => boolean` | The callback function used to determine whether an element should be included in the first or second array. |
 
 ## Returns

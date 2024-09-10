@@ -97,4 +97,10 @@ describe("permutations function", () => {
       ["a", 1],
     ])
   })
+
+  it("should not modify the original array", () => {
+    const array = [1, 2, 3]
+    permutations(array)
+    expect(array).toEqual([1, 2, 3])
+  })
 })

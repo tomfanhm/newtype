@@ -51,4 +51,10 @@ describe("all function", () => {
     const result = all([1, "", true, [1, 2], { key: "value" }, () => {}])
     expect(result).toBe(false)
   })
+
+  it("should not modify the original array", () => {
+    const arr = [1, 2, 3]
+    all(arr)
+    expect(arr).toEqual([1, 2, 3])
+  })
 })

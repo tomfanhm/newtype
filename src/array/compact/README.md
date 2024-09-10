@@ -4,9 +4,9 @@ Removes `null` and `undefined` values from an array.
 
 ## Parameters
 
-| Parameter | Type  | Description           |
-| --------- | ----- | --------------------- |
-| `array`   | `T[]` | The array to compact. |
+| Parameter | Type               | Description           |
+| --------- | ------------------ | --------------------- |
+| `array`   | `ReadonlyArray<T>` | The array to compact. |
 
 ## Returns
 

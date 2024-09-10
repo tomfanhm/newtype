@@ -6,7 +6,7 @@ Sorts an array using the Tim Sort algorithm, which is a hybrid sorting algorithm
 
 | Parameter | Type                     | Description                                                                                                                                                                                                    |
 | --------- | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `array`   | `T[]`                    | The array to be sorted.                                                                                                                                                                                        |
+| `array`   | `ReadonlyArray<T>`       | The array to be sorted.                                                                                                                                                                                        |
 | `compare` | `(a: T, b: T) => number` | A function that defines the order of the elements. It should return a negative value if `a` should be sorted before `b`, a positive value if `a` should be sorted after `b`, and `0` if `a` and `b` are equal. |
 
 ## Returns

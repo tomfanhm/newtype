@@ -95,4 +95,11 @@ describe("partition function", () => {
     const result = partition(arr, callback)
     expect(result).toEqual([[new Item("B", 60), new Item("C", 100)], [new Item("A", 30)]])
   })
+
+  it("should not modify the original array", () => {
+    const arr = [1, 2, 3, 4, 5, 6]
+    const callback = (n: number) => n % 2 === 0
+    partition(arr, callback)
+    expect(arr).toEqual([1, 2, 3, 4, 5, 6])
+  })
 })

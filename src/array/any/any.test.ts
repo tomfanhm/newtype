@@ -51,4 +51,10 @@ describe("any function", () => {
     const result = any([0, "", false, null, undefined])
     expect(result).toBe(false)
   })
+
+  it("should not modify the original array", () => {
+    const arr = [1, 2, 3]
+    any(arr)
+    expect(arr).toEqual([1, 2, 3])
+  })
 })

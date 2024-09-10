@@ -4,10 +4,10 @@ Returns a sample of elements from an array.
 
 ## Parameters
 
-| Parameter | Type     | Description                                        |
-| --------- | -------- | -------------------------------------------------- |
-| `array`   | `T[]`    | The array to sample from.                          |
-| `count`   | `number` | The number of elements to sample. Defaults to `1`. |
+| Parameter | Type               | Description                                        |
+| --------- | ------------------ | -------------------------------------------------- |
+| `array`   | `ReadonlyArray<T>` | The array to sample from.                          |
+| `count`   | `number`           | The number of elements to sample. Defaults to `1`. |
 
 ## Returns
 

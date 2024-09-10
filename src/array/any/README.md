@@ -4,9 +4,9 @@ Checks if any element in the array is truthy.
 
 ## Parameters
 
-| Parameter | Type  | Description         |
-| --------- | ----- | ------------------- |
-| `array`   | `T[]` | The array to check. |
+| Parameter | Type               | Description         |
+| --------- | ------------------ | ------------------- |
+| array     | `ReadonlyArray<T>` | The array to check. |
 
 ## Returns
 

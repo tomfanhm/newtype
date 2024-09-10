@@ -6,7 +6,7 @@
  * @param array2 - The second array.
  * @returns The intersection of the two arrays.
  */
-export default function intersection<T>(array1: T[], array2: T[]): T[] {
+export default function intersection<T>(array1: ReadonlyArray<T>, array2: ReadonlyArray<T>): T[] {
   const set1 = new Set(array1)
   const set2 = new Set(array2)
   return [...set1].filter((item) => set2.has(item))

@@ -4,9 +4,9 @@ Removes duplicate elements from an array.
 
 ## Parameters
 
-| Parameter | Type  | Description                          |
-| --------- | ----- | ------------------------------------ |
-| `array`   | `T[]` | The array to remove duplicates from. |
+| Parameter | Type               | Description                          |
+| --------- | ------------------ | ------------------------------------ |
+| `array`   | `ReadonlyArray<T>` | The array to remove duplicates from. |
 
 ## Returns
 

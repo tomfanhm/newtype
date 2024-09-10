@@ -6,7 +6,7 @@
  * @param array - The array to generate permutations from.
  * @returns An array of arrays containing all possible permutations.
  */
-export default function permutations<T>(array: T[]): T[][] {
+export default function permutations<T>(array: ReadonlyArray<T>): T[][] {
   const results: T[][] = []
   function helper(arr: T[], memo: T[]) {
     for (let i = 0; i < arr.length; i++) {
@@ -18,6 +18,6 @@ export default function permutations<T>(array: T[]): T[][] {
       arr.splice(i, 0, current[0])
     }
   }
-  helper(array, [])
+  helper([...array], [])
   return results
 }

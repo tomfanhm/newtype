@@ -4,9 +4,9 @@ Shuffles an array using the Fisher-Yates (aka Knuth) shuffle algorithm.
 
 ## Parameters
 
-| Parameter | Type  | Description               |
-| --------- | ----- | ------------------------- |
-| `array`   | `T[]` | The array to be shuffled. |
+| Parameter | Type               | Description               |
+| --------- | ------------------ | ------------------------- |
+| `array`   | `ReadonlyArray<T>` | The array to be shuffled. |
 
 ## Returns
 

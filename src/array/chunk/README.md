@@ -4,10 +4,10 @@ Splits an array into chunks of a specified size.
 
 ## Parameters
 
-| Parameter   | Type     | Description              |
-| ----------- | -------- | ------------------------ |
-| `array`     | `T[]`    | The array to be chunked. |
-| `chunkSize` | `number` | The size of each chunk.  |
+| Parameter   | Type               | Description              |
+| ----------- | ------------------ | ------------------------ |
+| `array`     | `ReadonlyArray<T>` | The array to be chunked. |
+| `chunkSize` | `number`           | The size of each chunk.  |
 
 ## Returns
 

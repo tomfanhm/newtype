@@ -6,7 +6,7 @@
  * @returns The shuffled array.
  * @template T - The type of elements in the array.
  */
-export default function shuffle<T>(array: T[]): T[] {
+export default function shuffle<T>(array: ReadonlyArray<T>): T[] {
   const clone = array.slice()
   let currentIndex = clone.length
   let randomIndex

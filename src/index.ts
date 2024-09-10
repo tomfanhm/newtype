@@ -36,9 +36,12 @@ export {
   isString,
   isSymbol,
   isUndefined,
+  memoize,
   parseUrl,
+  retry,
   scheduler,
   sleep,
+  throttle,
   toType,
 } from "./core/index"
 

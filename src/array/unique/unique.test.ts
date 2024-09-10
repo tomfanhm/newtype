@@ -49,4 +49,10 @@ describe("unique function", () => {
     const result = unique([3, 1, 2, 1, 3, 4])
     expect(result).toEqual([3, 1, 2, 4])
   })
+
+  it("should not modify the original array", () => {
+    const arr = [1, 2, 3]
+    unique(arr)
+    expect(arr).toEqual([1, 2, 3])
+  })
 })
