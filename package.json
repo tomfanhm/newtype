@@ -59,7 +59,11 @@
     }
   },
   "types": "./dist/index.d.ts",
-  "version": "0.0.14",
+  "version": "0.0.15",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomfanhm/newtype.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
