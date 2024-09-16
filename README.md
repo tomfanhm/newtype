@@ -90,6 +90,8 @@ Explore detailed documentation for each module:
 
 - [age](src/date/age/README.md)
 - [dateCalculator](src/date/date-calculator/README.md)
+- [daysBetweenDates](src/date/days-between-dates/README.md)
+- [formatDate](src/date/format-date/README.md)
 - [isLeapYear](src/date/is-leap-year/README.md)
 - [isWeekend](src/date/is-weekend/README.md)
 

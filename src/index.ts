@@ -45,7 +45,7 @@ export {
   toType,
 } from "./core/index"
 
-export { age, dateCalculator, isLeapYear, isWeekend } from "./date/index"
+export { age, dateCalculator, daysBetweenDates, formatDate, isLeapYear, isWeekend } from "./date/index"
 
 export {
   binomial,
