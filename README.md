@@ -22,6 +22,19 @@ Or using pnpm:
 pnpm add newtype
 ```
 
+## Usage
+
+After installing **newtype**, you can import and use various utilities from the library in your TypeScript or JavaScript projects. Here's how you can include these utilities:
+
+```javascript
+// Importing specific functions directly from the main module (Larger size)
+import { bubbleSort, unique } from "newtype"
+// Importing specific functions from the 'array' module using ES Modules
+import { bubbleSort, unique } from "newtype/array"
+// Importing specific functions from the 'array' module using CommonJS
+const { bubbleSort, unique } = require("newtype/array")
+```
+
 ## Modules
 
 Explore detailed documentation for each module:
