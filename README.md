@@ -85,10 +85,12 @@ Explore detailed documentation for each module:
 - [nCr](src/math/arrangements/README.md)
 - [nPr](src/math/arrangements/README.md)
 - [binomial](src/math/binomial/README.md)
+- [clamp](src/math/clamp/README.md)
 - [factorial](src/math/factorial/README.md)
 - [gcd](src/math/gcd/README.md)
 - [hypergeometric](src/math/hypergeometric/README.md)
 - [iqr](src/math/iqr/README.md)
+- [lcm](src/math/lcm/README.md)
 - [lerp](src/math/lerp/README.md)
 - [mean](src/math/mean/README.md)
 - [median](src/math/median/README.md)
@@ -98,6 +100,7 @@ Explore detailed documentation for each module:
 - [q2](src/math/quartile/README.md)
 - [q3](src/math/quartile/README.md)
 - [q4](src/math/quartile/README.md)
+- [randomInt](src/math/random-int/README.md)
 - [rotateMatrix](src/math/rotate-matrix/README.md)
 - [std](src/math/std/README.md)
 - [sum](src/math/sum/README.md)
@@ -105,6 +108,8 @@ Explore detailed documentation for each module:
 
 ### String
 
+- [capitalize](src/string/capitalize/README.md)
+- [convertCase](src/string/convert-case/README.md)
 - [isUUID](src/string/is-uuid/README.md)
 - [numberToRoman](src/string/number-to-roman/README.md)
 - [replaceAll](src/string/replace-all/README.md)
