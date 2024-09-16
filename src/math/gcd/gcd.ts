@@ -1,6 +1,6 @@
 import any from "@/array/any/any"
 
-function getGCD(a: number, b: number): number {
+export function getGCD(a: number, b: number): number {
   if (b === 0) {
     return a
   }

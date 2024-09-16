@@ -49,10 +49,12 @@ export { age, dateCalculator, isLeapYear, isWeekend } from "./date/index"
 
 export {
   binomial,
+  clamp,
   factorial,
   gcd,
   hypergeometric,
   iqr,
+  lcm,
   lerp,
   mean,
   median,
@@ -64,6 +66,7 @@ export {
   q2,
   q3,
   q4,
+  randomInt,
   rotateMatrix,
   std,
   sum,
