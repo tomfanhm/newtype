@@ -70,6 +70,6 @@ export {
   variance,
 } from "./math/index"
 
-export { isUUID, numberToRoman, replaceAll, reverse, truncate } from "./string/index"
+export { capitalize, convertCase, isUUID, numberToRoman, replaceAll, reverse, truncate } from "./string/index"
 
 export { measurePerformance } from "./system/index"
