@@ -3,8 +3,8 @@ import mean from "../mean/mean"
 /**
  * Calculates the variance of an array of numbers.
  *
- * @param numbers - The array of numbers.
- * @param isSample - Optional. Specifies whether the array represents a sample. Default is true.
+ * @param numbers The array of numbers.
+ * @param isSample Optional. Specifies whether the array represents a sample. Default is true.
  * @returns The variance of the array of numbers.
  * @throws If the array is empty.
  * @throws If the array contains only one element and isSample is true.

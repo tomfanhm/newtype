@@ -2,7 +2,7 @@ import sum from "../sum/sum"
 
 /**
  * Calculates the mean (average) of an array of numbers.
- * @param numbers - The array of numbers.
+ * @param numbers The array of numbers.
  * @returns The mean of the numbers.
  * @throws If the array is empty.
  */

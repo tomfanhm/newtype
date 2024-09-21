@@ -1,7 +1,7 @@
 /**
  * Measures the performance of a given callback function.
  *
- * @param callback - The callback function to be measured.
+ * @param callback The callback function to be measured.
  * @returns A promise that resolves to the result of the callback function.
  */
 export default async function measurePerformance<T>(callback: () => Promise<T>) {

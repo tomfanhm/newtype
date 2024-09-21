@@ -3,8 +3,8 @@ import isDate from "@/core/is-date/is-date"
 /**
  * Formats a date string according to the specified format.
  *
- * @param dateStr - The date string to format.
- * @param format - The format string. Use "YYYY" for the full year, "MM" for the month, and "DD" for the day.
+ * @param dateStr The date string to format.
+ * @param format The format string. Use "YYYY" for the full year, "MM" for the month, and "DD" for the day.
  * @returns The formatted date string.
  * @throws Will throw an error if the provided date string is invalid.
  */

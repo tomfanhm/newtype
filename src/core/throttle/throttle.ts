@@ -2,9 +2,9 @@
  * Throttles the execution of a function.
  * The function will only be invoked once every `wait` milliseconds.
  *
- * @template T - The type of the function to throttle.
- * @param fn - The function to throttle.
- * @param wait - The time to wait between function invocations.
+ * @template T The type of the function to throttle.
+ * @param fn The function to throttle.
+ * @param wait The time to wait between function invocations.
  * @returns The throttled function.
  */
 export default function throttle<T extends (...args: Parameters<T>) => void>(fn: T, wait: number): T {

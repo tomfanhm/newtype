@@ -4,9 +4,9 @@ import shuffle from "../shuffle/shuffle"
 /**
  * Returns a sample of elements from an array.
  *
- * @template T - The type of elements in the array.
- * @param array - The array to sample from.
- * @param count - The number of elements to sample. Defaults to 1.
+ * @template T The type of elements in the array.
+ * @param array The array to sample from.
+ * @param count The number of elements to sample. Defaults to 1.
  * @returns An array containing the sampled elements.
  * @throws If count is less than or equal to 0 or not an integer.
  */

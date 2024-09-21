@@ -2,7 +2,7 @@
  * Calculates the mode(s) of an array of numbers.
  * The mode is the value(s) that appear most frequently in the array.
  * If there are multiple modes, all of them will be returned.
- * @param numbers - An array of numbers.
+ * @param numbers An array of numbers.
  * @returns An array of mode(s) from the input array.
  * @throws If the input array is empty.
  */

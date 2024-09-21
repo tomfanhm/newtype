@@ -3,15 +3,15 @@ type CaseType = "camelCase" | "PascalCase" | "snake_case" | "kebab-case" | "SCRE
 /**
  * Converts a string from one case type to another.
  *
- * @param input - The input string to be converted.
- * @param inputType - The case type of the input string. Can be one of:
+ * @param input The input string to be converted.
+ * @param inputType The case type of the input string. Can be one of:
  *   - "camelCase"
  *   - "PascalCase"
  *   - "snake_case"
  *   - "SCREAMING_SNAKE_CASE"
  *   - "kebab-case"
  *   - "Train-Case"
- * @param outputType - The desired case type for the output string. Can be one of the same values as `inputType`.
+ * @param outputType The desired case type for the output string. Can be one of the same values as `inputType`.
  * @returns The converted string in the specified output case type.
  */
 export default function convertCase(input: string, inputType: CaseType, outputType: CaseType): string {

@@ -3,9 +3,9 @@ import { isNumber } from "@/core"
 /**
  * Generates an array of numbers within a specified range.
  *
- * @param start - The starting number of the range.
- * @param end - The ending number of the range.
- * @param step - The increment or decrement value. Default is 1.
+ * @param start The starting number of the range.
+ * @param end The ending number of the range.
+ * @param step The increment or decrement value. Default is 1.
  * @returns An array of numbers within the specified range.
  * @throws Error if the step value is zero.
  * @throws Error if the start, end, or step values are not numbers.

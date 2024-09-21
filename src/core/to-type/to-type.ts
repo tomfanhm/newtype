@@ -1,7 +1,7 @@
 /**
  * Converts a value to its type as a string.
  *
- * @param value - The value to convert.
+ * @param value The value to convert.
  * @returns The type of the value as a string.
  */
 export default function toType(value: unknown): string {

@@ -3,8 +3,8 @@ import variance from "../variance/variance"
 /**
  * Calculates the standard deviation of an array of numbers.
  *
- * @param numbers - The array of numbers.
- * @param isSample - Optional. Specifies whether the array represents a sample or the entire population. Default is true.
+ * @param numbers The array of numbers.
+ * @param isSample Optional. Specifies whether the array represents a sample or the entire population. Default is true.
  * @returns The standard deviation of the numbers.
  * @throws If the array is empty.
  * @throws If the array has only one element and isSample is true.

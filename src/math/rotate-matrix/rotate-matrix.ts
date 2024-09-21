@@ -1,8 +1,8 @@
 /**
  * Rotates a matrix by the specified degrees.
- * @param matrix - The matrix to rotate.
- * @param degrees - The degrees to rotate the matrix by. Must be one of 90, 180, 270, 360.
- * @param clockwise - Specifies whether to rotate the matrix clockwise (default: true).
+ * @param matrix The matrix to rotate.
+ * @param degrees The degrees to rotate the matrix by. Must be one of 90, 180, 270, 360.
+ * @param clockwise Specifies whether to rotate the matrix clockwise (default: true).
  * @returns The rotated matrix.
  * @throws Error if an invalid rotation degree is provided.
  */

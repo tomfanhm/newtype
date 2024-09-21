@@ -1,7 +1,7 @@
 /**
  * Calculates the median value of an array of numbers.
  *
- * @param numbers - The array of numbers.
+ * @param numbers The array of numbers.
  * @returns The median value of the array.
  * @throws If the array is empty.
  */

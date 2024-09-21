@@ -2,9 +2,9 @@
  * Shuffles an array using the Fisher-Yates (aka Knuth) shuffle algorithm.
  * @reference https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
  *
- * @param array - The array to be shuffled.
+ * @template T The type of elements in the array.
+ * @param array The array to be shuffled.
  * @returns The shuffled array.
- * @template T - The type of elements in the array.
  */
 export default function shuffle<T>(array: ReadonlyArray<T>): T[] {
   const clone = array.slice()

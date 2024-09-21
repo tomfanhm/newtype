@@ -5,7 +5,7 @@ const MILLISECONDS_IN_A_DAY = 86400000
 
 /**
  * A utility function that performs date calculations.
- * @param d - The input date.
+ * @param d The input date.
  * @returns An object with methods to add or subtract days, months, and years from the input date.
  * @throws An error if the input is not a valid date.
  */

@@ -4,10 +4,10 @@ import { nCr } from "../arrangements/arrangements"
 /**
  * Calculates the hypergeometric distribution.
  *
- * @param N - The population size.
- * @param K - The number of successes in the population.
- * @param n - The sample size.
- * @param k - The number of observed successes in the sample.
+ * @param N The population size.
+ * @param K The number of successes in the population.
+ * @param n The sample size.
+ * @param k The number of observed successes in the sample.
  * @returns The probability of observing k successes in a sample of size n, drawn without replacement from a population of size N with K successes.
  * @throws If any of the parameters are negative or not integers, or if K is greater than N, or if n is greater than N, or if k is greater than the smaller of K or n.
  */

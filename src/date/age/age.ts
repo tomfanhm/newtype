@@ -2,7 +2,7 @@ import isDate from "@/core/is-date/is-date"
 
 /**
  * Calculates the age based on the provided birth date.
- * @param birthDate - The birth date in string format (e.g. "YYYY-MM-DD").
+ * @param birthDate The birth date in string format (e.g. "YYYY-MM-DD").
  * @returns The calculated age as a number.
  * @throws If an invalid birth date string is provided.
  */

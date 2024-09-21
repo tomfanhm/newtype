@@ -3,7 +3,7 @@ import isInteger from "@/core/is-integer/is-integer"
 /**
  * Calculates the factorial of a non-negative integer.
  *
- * @param n - The number for which to calculate the factorial.
+ * @param n The number for which to calculate the factorial.
  * @returns The factorial of the given number.
  * @throws If the number is negative or not an integer.
  */

@@ -2,7 +2,7 @@ import isInteger from "@/core/is-integer/is-integer"
 
 /**
  * Checks if a given year is a leap year.
- * @param year - The year to check.
+ * @param year The year to check.
  * @returns `true` if the year is a leap year, `false` otherwise.
  * @throws If the year is less than 1582, as the Gregorian calendar was not introduced until 1582.
  * @throws If the year is not an integer.

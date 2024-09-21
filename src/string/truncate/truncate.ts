@@ -3,9 +3,9 @@ import isInteger from "@/core/is-integer/is-integer"
 /**
  * Truncates a string to a specified length and appends a tail if necessary.
  *
- * @param str - The string to truncate.
- * @param length - The maximum length of the truncated string.
- * @param tail - The tail to append to the truncated string. Default is "...".
+ * @param str The string to truncate.
+ * @param length The maximum length of the truncated string.
+ * @param tail The tail to append to the truncated string. Default is "...".
  * @returns The truncated string.
  * @throws Error if length is not an integer.
  */

@@ -4,8 +4,8 @@ import factorial from "../factorial/factorial"
 /**
  * Calculates the probability mass function value of the Poisson distribution.
  *
- * @param lambda - The average rate of events occurring per unit of time.
- * @param k - The number of events to calculate the probability for.
+ * @param lambda The average rate of events occurring per unit of time.
+ * @param k The number of events to calculate the probability for.
  * @returns The probability mass function value.
  * @throws If lambda is negative.
  * @throws If k is negative.

@@ -2,7 +2,7 @@ import isInteger from "@/core/is-integer/is-integer"
 
 /**
  * Converts a number to its Roman numeral representation.
- * @param num - The number to convert.
+ * @param num The number to convert.
  * @returns The Roman numeral representation of the input number.
  * @throws If the input is not a valid integer or is outside the range of 1 to 3999.
  */

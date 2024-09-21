@@ -4,8 +4,8 @@ import isUndefined from "../is-undefined/is-undefined"
 /**
  * Memoizes a function to cache its results based on the arguments passed.
  *
- * @template T - The type of the function being memoized.
- * @param fn - The function to be memoized.
+ * @template T The type of the function being memoized.
+ * @param fn The function to be memoized.
  * @returns The memoized function.
  */
 export default function memoize<T extends (...args: Parameters<T>) => ReturnType<T>>(fn: T): T {

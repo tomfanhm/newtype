@@ -8,7 +8,7 @@ function haveZero(arr: number[]): boolean {
 /**
  * Calculates the Least Common Multiple (LCM) of an array of numbers.
  *
- * @param arr - An array of numbers. The array should contain at least 2 elements and should not contain 0.
+ * @param arr An array of numbers. The array should contain at least 2 elements and should not contain 0.
  * @returns The LCM of the numbers in the array.
  * @throws Will throw an error if the array has fewer than 2 elements or contains 0.
  */

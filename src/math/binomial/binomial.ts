@@ -3,9 +3,9 @@ import { nCr } from "../arrangements/arrangements"
 /**
  * Calculates the binomial coefficient using the formula nCk * p^k * (1 - p)^(n - k).
  *
- * @param n - The total number of trials.
- * @param k - The number of successful trials.
- * @param p - The probability of success in each trial.
+ * @param n The total number of trials.
+ * @param k The number of successful trials.
+ * @param p The probability of success in each trial.
  * @returns The calculated binomial coefficient.
  * @throws If the values for n, k, or p are invalid.
  */

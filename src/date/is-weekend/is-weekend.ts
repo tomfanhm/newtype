@@ -3,7 +3,7 @@ import isDate from "@/core/is-date/is-date"
 /**
  * Checks if a given date falls on a weekend.
  *
- * @param date - The date to check in string format.
+ * @param date The date to check in string format.
  * @returns A boolean indicating whether the date falls on a weekend (Saturday or Sunday).
  * @throws If an invalid date string is provided.
  */

@@ -2,8 +2,8 @@
  * Generates all possible permutations of an array.
  * @link https://stackoverflow.com/questions/9960908/permutations-in-javascript
  *
- * @template T - The type of elements in the array.
- * @param array - The array to generate permutations from.
+ * @template T The type of elements in the array.
+ * @param array The array to generate permutations from.
  * @returns An array of arrays containing all possible permutations.
  */
 export default function permutations<T>(array: ReadonlyArray<T>): T[][] {

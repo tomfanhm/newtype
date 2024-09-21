@@ -1,9 +1,9 @@
 /**
  * Clamps a number between a minimum and maximum value.
  *
- * @param value - The number to clamp.
- * @param min - The minimum value to clamp to.
- * @param max - The maximum value to clamp to.
+ * @param value The number to clamp.
+ * @param min The minimum value to clamp to.
+ * @param max The maximum value to clamp to.
  * @returns The clamped value.
  * @throws Will throw an error if the minimum value is greater than the maximum value.
  */

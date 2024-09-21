@@ -2,10 +2,10 @@ import sleep from "../sleep/sleep"
 
 /**
  * Retries a function a specified number of times with a delay between each retry.
- * @template T - The type of the function being retried.
- * @param fn - The function to be retried.
- * @param retries - The number of times to retry the function, defaults to 3.
- * @param delay - The delay in milliseconds between each retry, defaults to 1000.
+ * @template T The type of the function being retried.
+ * @param fn The function to be retried.
+ * @param retries The number of times to retry the function, defaults to 3.
+ * @param delay The delay in milliseconds between each retry, defaults to 1000.
  * @returns A promise that resolves to the return value of the function being retried.
  * @throws Throws an error if the function fails after all retries.
  * @throws Throws an error if the number of retries is less than 1.

@@ -3,9 +3,9 @@ import isInteger from "@/core/is-integer/is-integer"
 /**
  * Splits an array into chunks of a specified size.
  *
- * @template T - The type of elements in the array.
- * @param array - The array to be chunked.
- * @param chunkSize - The size of each chunk.
+ * @template T The type of elements in the array.
+ * @param array The array to be chunked.
+ * @param chunkSize The size of each chunk.
  * @returns An array of chunks.
  * @throws If the chunk size is less than or equal to zero or not an integer.
  */

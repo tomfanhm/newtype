@@ -21,9 +21,9 @@ This function does not throw any explicit errors but will propagate any errors t
 ## Examples
 
 ```typescript
-async function exampleTask() {
+async function func() {
   return new Promise((resolve) => setTimeout(resolve, 1000))
 }
 
-measurePerformance(exampleTask)
+measurePerformance(func)
 ```

@@ -16,7 +16,7 @@ type URLComponents = {
 /**
  * Parses a URL and returns its components.
  *
- * @param url - The URL to parse.
+ * @param url The URL to parse.
  * @returns An object containing the components of the parsed URL.
  */
 export default function parseUrl(url: string): Prettify<URLComponents> {

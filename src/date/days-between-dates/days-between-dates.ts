@@ -1,8 +1,8 @@
 /**
  * Calculates the number of days between two dates.
  *
- * @param date1 - The first date.
- * @param date2 - The second date.
+ * @param date1 The first date.
+ * @param date2 The second date.
  * @returns The number of days between the two dates.
  */
 export default function daysBetweenDates(date1: Date, date2: Date): number {

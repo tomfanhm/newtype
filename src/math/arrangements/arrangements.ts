@@ -4,8 +4,8 @@ import factorial from "../factorial/factorial"
 /**
  * Calculates the number of combinations (nCr) for given values of n and r.
  *
- * @param n - The total number of items.
- * @param r - The number of items to be selected.
+ * @param n The total number of items.
+ * @param r The number of items to be selected.
  * @returns The number of combinations.
  * @throws If n or r is a negative number or not an integer, or if r is greater than n.
  */
@@ -19,8 +19,8 @@ export function nCr(n: number, r: number): number {
 /**
  * Calculates the number of permutations of n items taken r at a time.
  *
- * @param n - The total number of items.
- * @param r - The number of items taken at a time.
+ * @param n The total number of items.
+ * @param r The number of items taken at a time.
  * @returns The number of permutations.
  * @throws If n or r is a negative number or not an integer, or if r is greater than n.
  */

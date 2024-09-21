@@ -1,7 +1,7 @@
 /**
  * Builds a URL by appending query parameters to a base URL.
- * @param baseUrl - The base URL.
- * @param params - An object containing the query parameters as key-value pairs.
+ * @param baseUrl The base URL.
+ * @param params An object containing the query parameters as key-value pairs.
  * @returns The complete URL with the appended query parameters.
  */
 export default function buildUrl(baseUrl: string, params: Record<string, string | number | boolean>): string {
